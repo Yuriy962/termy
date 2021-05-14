@@ -22,18 +22,27 @@
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
+        .header__link{
+            margin: 0 12px;
+        }
     }
     &__bottom{
         margin: 15px 0;
     }
     &__link{
         line-height: 14px;
-        margin: 0 12px;
         position: relative;
     }
+    a{
+        display: block;
+        margin: auto 0;
+    }
 }
-
-.social{
+.buy{
+    font-size: 0.928em;
+}
+.icon{
+    cursor: pointer;
     &__item{
         width: 33px;
         height: 33px;
@@ -81,4 +90,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.phone{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.basket{
+    position: relative;
+    &__count{
+        font-size: 11px;
+        width: 16px;
+        height: 16px;
+        background-color: $orange-btn;
+        color: #fff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+@media (max-width: 1250px){
+    .logo{
+        width: 10%;
+        top: 65%;
+        transform: translateY(-50%);
+        &__inner{
+            width: 100%;
+        }
+    }
+    .phone{
+        font-size: 15px;
+    }
+    .header{
+        font-size: 13px;
+        &__left, &__right {
+            width: 45%;
+        }
+        &__left{
+            padding-right: 20px;
+            padding-left: 0;
+        }
+        &__right{
+            padding-left: 20px;
+            padding-right: 0;
+        }
+        &__link{
+            font-size: 11px;
+        }
+        &__block{
+            &_left{
+                border-top: 62px solid transparent;
+            }
+            &_right{
+                border-top: 62px solid transparent;
+            }
+        }
+        &__top{
+            padding: 15px 0;
+        }
+    }
 }

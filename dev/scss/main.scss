@@ -8,12 +8,19 @@
 
 *{
  box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+ font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
 }
 
 body{
 	font-family: 'Noto Sans JP', sans-serif;
 	position: relative;
 	margin: 0;
+	font-size: 14px;
 }
 
 
@@ -30,9 +37,11 @@ body.compensate-for-scrollbar {
 }
 /*end fancybox*/
 @import 'variables';
-@import 'buttons';
+@import 'fonts';
 @import 'colors';
+@import 'buttons';
 @import "./bootstrap";
+@import '../../node_modules/swiper/swiper-bundle.min';
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 @import 'blocks/header';
 @import 'blocks/promo';
