@@ -45,6 +45,9 @@ body.compensate-for-scrollbar {
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/greeting';
+@import 'blocks/schema';
+@import 'blocks/ticket';
 
 @import 'blocks/footer';
 
@@ -75,4 +78,13 @@ a{
 	&:hover{
 		border-color: transparent;
 	}
+}
+ul li::marker{
+	color: #17B8A8;
+}
+ul li{
+	margin: 12px 0;
+}
+ul li:first-child{
+	margin-top: 0;
 }

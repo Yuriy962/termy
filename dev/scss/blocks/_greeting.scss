@@ -1,0 +1,91 @@
+.greeting{
+    padding: 13px 0 40px;
+    background: url('../img/greeting/greeting-bg.jpg') center/cover no-repeat;
+    &__shadow{
+        background: linear-gradient(0deg, #2B352F -4.33%, rgba(0, 0, 0, 0) 83.85%);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        border-radius: 10px;
+        transition: 0.1s;
+    }
+    &__inner{
+        position: relative;
+        height: 100%;
+        color: #fff;
+        &:hover .greeting__shadow {
+            background: rgba(43, 53, 47, 0.85);
+            filter: blur(1px);
+        }
+        &:hover .greeting__descr{
+            bottom: 0;
+        }
+        &:hover .greeting__title::after{
+            opacity: 0;
+        }
+        &:hover .greeting__text{
+            opacity: 1;
+        }
+    }
+    &__item{
+        height: 294px;
+        display: block;
+        margin-bottom: 30px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    &__title{
+        width: 100%;
+        position: relative;
+        color: inherit;
+        margin-bottom: 20px;
+        padding-right: 51px;
+        &:after{
+            content: url('../icons/arrow-btn.svg');
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 42px;
+            height: 42px;
+            border: 1px solid #FFFFFF;
+            border-radius: 100%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: 0.3s opacity linear;
+        }
+    }
+    &__descr{
+        padding: 0 30px 30px;
+        position: absolute;
+        z-index: 1;
+        bottom: -100px;
+        min-height: 80px;
+        padding-right: 35px;
+        color: inherit;
+        transition: 0.3s bottom;
+    }
+    &__text{
+        transition: 0.3s opacity linear;
+        opacity: 0;
+    }
+}
+
+.title{
+    font-size: 54px;
+    font-weight: 700;
+    color: #0DB3A2;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    &_big{
+        font-size: 77px;
+    }
+    &_small{
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+}

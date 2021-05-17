@@ -1,0 +1,14 @@
+.ticket{
+    background: #E6FAF8;
+}
+
+.booking{
+    min-height: 1166px;
+    &__calendar{
+        min-height: 592px;
+        background-color: #fff;
+    }
+    .link{
+        text-decoration: underline;
+    }
+}

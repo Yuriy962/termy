@@ -9,11 +9,15 @@
     cursor: pointer;
     text-transform: uppercase;
     &:hover{
-        color: $sea-wave-light;
+        color: #fff;
     }
     &-big{
         padding: 25px 48px;
         border-radius: 10px;
+    }
+    &-sectional{
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 }
 .buy{

@@ -52,7 +52,12 @@ $(document).ready(function () {
     var swiper = new Swiper(".promo__swiper", {
         pagination: {
             el: ".swiper-pagination",
-            type: "progressbar",
+            type: "progressbar"/* ,
+            renderFraction: (currentClass, totalClass) => {
+                return '<span class="current-number' + currentClass + '"></span>' +
+                  ' of ' +
+                  '<span class="total-number ' + totalClass + '"></span>';
+            } */
         },
         navigation: {
             nextEl: ".swiper-button-next",
@@ -66,7 +71,8 @@ $(document).ready(function () {
             slideChange: function (swiper) {
                 console.log(addZero(swiper.activeIndex + 1));
             }
-        }
+        },
     });
+
 });
 
