@@ -46,7 +46,7 @@
     &__item{
         width: 33px;
         height: 33px;
-        background-color: #0DB2A2;
+        background-color: $accent;
         border-radius: 100%;
         display: flex;
         justify-content: center;
@@ -57,6 +57,9 @@
         }
         &:last-child{
             margin-right: 0;
+        }
+        &:hover{
+            background-color: $btn;
         }
         img{
             width: 100%;
@@ -102,7 +105,7 @@
         font-size: 11px;
         width: 16px;
         height: 16px;
-        background-color: $orange-btn;
+        background-color: $btn;
         color: #fff;
         border-radius: 100%;
         display: flex;

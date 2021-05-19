@@ -1,5 +1,8 @@
 .ticket{
     background: #E6FAF8;
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .booking{
@@ -8,7 +11,119 @@
         min-height: 592px;
         background-color: #fff;
     }
+    &__item{
+        position: relative;
+        background-color: #fff;
+        border-left: 8px solid $btn;
+        border-radius: 5px;
+        padding: 18px 80px 18px 25px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+    &__title{
+        font-size: 15px;
+        color: $accent;
+    }
     .link{
         text-decoration: underline;
+    }
+}
+
+.text{
+    font-size: 19px; 
+    margin: 0;
+}
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+    &::after{
+        content: url('../img/ticket/arrow-down.svg');
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $accent;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%) rotate(0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    &_active{
+        &::after{
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}
+
+.attendance{
+    background-color: #fff;
+    border: 1px solid #17B8A8;
+    border-radius: 5px;
+    padding: 12px 50px 12px 18px;
+    margin: 21px 0;
+    &::after{
+        width: 32px;
+        height: 32px;
+    }
+}
+.line{
+    background-color: #64B1AA;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    &-green{
+        background-color: #CCE5E2; 
+    }
+}
+
+.visit{
+    font-size: 20px;
+    &__item{
+        &_title{
+            font-size: 0.95em;
+            font-weight: 700;
+            margin-top: 0.9em;
+        }
+        &_text{
+            font-size: 0.8em;
+            margin-top: 0.9em;
+        }
+        &__pie{
+            justify-content: space-evenly;
+        }
+        &_left{
+            flex: 0 0 50%;
+            background-color: #fff;
+            padding: 29px 47px 18px;
+            border-radius: 10px 0 0 10px;
+        }
+        &_right{
+            color: #fff;
+            flex: 0 0 50%;
+            background-color: #4BA29A;
+            padding: 29px 38px 32px 31px;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
+@media (max-width: 0){
+
+}
+
+.deliverydesk{
+    margin-top: 90px;
+    &__form{
+        position: relative;
+        background-color: #4BA39A;
+        border-radius: 10px;
+        box-shadow: 0px 4px 40px rgba(204, 221, 219, 0.2);
+        min-height: 435px;
+        padding: 36px 50px 40px;
     }
 }

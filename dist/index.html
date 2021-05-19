@@ -279,7 +279,7 @@
 </section>
 <section class="schema">
     <div class="container">
-        <h2 class="title">Схема центра</h2>
+        <h2 class="title schema__title">Схема центра</h2>
         
         <picture class="schema__img">
             <source 
@@ -300,23 +300,42 @@
     </div>
 </section>
 <article class="ticket">
+    <img src="img/ticket/ship.svg" class="img-underbg" alt="" style="
+        left: 85.9375%;
+        top: 14.895%;
+        transform: rotate(4.07deg);
+    ">
+    <img  src="img/ticket/seashell.svg" class="img-underbg" alt="" style="
+        left: 6.458%;
+        top: 42.557%;
+        transform: rotate(-3.34deg);
+    ">
+    <img  src="img/ticket/branch.png" class="img-underbg branch" alt="">
     <section class="booking">
         <div class="container">
             <h2 class="title">Купить билет</h2>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="booking__item"></div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="booking__item dropdown">
+                        <div class="booking__title">Выбрать длительность посещения </div>
+                        <p class="text">2,5 часа</p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="booking__item"></div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="booking__item dropdown">
+                        <div class="booking__title">Выбрать время входа</div>
+                        <p class="text">с 10.00 до 16.00</p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="booking__item"></div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="booking__item dropdown">
+                        <div class="booking__title">Выбрать категорию билета</div>
+                        <p class="text">Взрослый</p>
+                    </div>
                 </div>
 
                 <div class="col-lg-12">
                     <div class="booking__calendar">
-
                     </div>
                 </div>
             </div>
@@ -328,10 +347,10 @@
     </section>
     <section class="visit">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row visit__list">
+                <div class="col-xl-6 col-lg-12">
                     <div class="visit__item">
-                        <h3 class="title title_small">Стоимость посещения различается</h3>
+                        <h3 class="title title_small mt-0 text-left">Стоимость посещения различается</h3>
                         <p>
                             <ul>
                                 <li>в выходные, праздничные и будние дни</li>
@@ -341,20 +360,653 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="visit__item">
-                        
+                <div class="col-xl-6 col-lg-12">
+                    <div class="visit__item d-flex visit__pie">
+                        <div class="visit__item_left">
+                            <h3 class="text font-weight-bold">Посещаемость</h3>
+                            <div class="attendance dropdown">
+                                <p class="text">Понедельник</p>
+                            </div>
+                            <div class="graphic">
+                                <img src="../img/ticket/graphic.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="visit__item_right">
+                            <img src="../img/ticket/gift.svg" alt="">
+                            <h3 class="text visit__item_title">30 минут в подарок!</h3>
+                            <p class="visit__item_text">Покупая билет, вы оплачиваете тариф на свой выбор и получаете 30 минут в подарок на переодевание</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="delivery-desk">
+    <section class="deliverydesk">
         <div class="container">
-            
+            <div class="deliverydesk__form">
+                <h3 class="title title_small mt-0 text-left text-white">Купить абонимент</h3>
+                <div class="line"></div>
+            </div>
         </div>        
     </section>
 </article>
+<section class="wellness">
+    <div class="container">
+        <h3 class="title title-sectional">Центр здоровья и отдыха <br> Волжские термы</h3>
+        <p class="text text-center">На территории центра могут отдохнуть:</p>
+        <div class="row wellness__list">
+            <div class="wellness__item">
+                <div class="wellness__img">
+                    <img src="img/wellness/1.png" alt="">
+                </div>
+                <p class="wellness__descr text">Семьи с детьми</p>
+            </div>
+            <div class="wellness__item">
+                <div class="wellness__img">
+                    <img src="img/wellness/2.png" alt="">
+                </div>
+                <p class="wellness__descr text">Компании друзей разного возраста</p>
+            </div>
+            <div class="wellness__item">
+                <div class="wellness__img">
+                    <img src="img/wellness/3.png" alt="">
+                </div>
+                <p class="wellness__descr text">Любители ЗОЖ</p>
+            </div>
+            <div class="wellness__item">
+                <div class="wellness__img">
+                    <img src="img/wellness/4.png" alt="">
+                </div>
+                <p class="wellness__descr text">Семьи с детьми</p>
+            </div>
+            <div class="wellness__item">
+                <div class="wellness__img">
+                    <img src="img/wellness/5.png" alt="">
+                </div>
+                <p class="wellness__descr text">Коллеги с работы и знакомые люди с одинаковыми интересами</p>
+            </div>
+        </div>
+    </div>
+    <div class="wellness__gallery gallery">
+        <a href="" class="gallery__item">
+            <img src="/img/wellness/gallery/big.jpg" alt="">
+        </a>
+
+        <div class="gallery__item gallery_small">
+            <a href="" class="gallery_small__item">
+                <img src="/img/wellness/gallery/1.jpg" alt="">
+            </a>
+            <a href="" class="gallery_small__item">
+                <img src="/img/wellness/gallery/2.jpg" alt="">
+            </a>
+            <a href="" class="gallery_small__item">
+                <img src="/img/wellness/gallery/3.jpg" alt="">
+            </a>
+            <a href="" class="gallery_small__item">
+                <img src="/img/wellness/gallery/4.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+<section class="additional">
+    <div class="container">
+        <h3 class="title title-sectional additional__title">Дополнительные услуги</h3>
+        <ul class="tabs">
+            <li class="tabs__item tabs__item_active"><div>Услуги массажа</div></li>
+            <li class="tabs__item"><div>Программа парения</div></li>
+            <li class="tabs__item"><div>Косметические процедуры</div></li>
+            <li class="tabs__item"><div>Обучение детей плаванию</div></li>
+        </ul>
+
+        <div class="tabs__content tabs__content_active">
+            <div class="service">
+                <div class="service__img service__item">
+                    <img src="img/additional/massage.jpg" alt="">
+                </div>
+                <div class="service__char service__item">
+                    <h3 class="title_small service__title">Массаж</h3>
+                    <table>
+                        <tr class="service__row">
+                            <td class="service__text">Термальный массаж общий для всего тела / релакс, лисфодренажный</td>
+                            <td class="service__text">40 / 60 мин.</td>
+                            <td class="service__price">990 / 1800 ₽</td>
+                        </tr>
+                        <tr class="service__row">
+                            <td class="service__text">Массаж спины</td>
+                            <td class="service__text">00 мин.</td>
+                            <td class="service__price">490 ₽</td>
+                        </tr>
+                        <tr class="service__row">
+                            <td class="service__text">Шейноворотниковая зона</td>
+                            <td class="service__text">00 мин.</td>
+                            <td class="service__price">490 ₽</td>
+                        </tr>
+                        <tr class="service__row">
+                            <td class="service__text">Голова лицо</td>
+                            <td class="service__text">20 / 40 мин.</td>
+                            <td class="service__price">490 / 990 ₽</td>
+                        </tr>
+                        <tr class="service__row">
+                            <td class="service__text">Ноги стопы</td>
+                            <td class="service__text">25 мин.</td>
+                            <td class="service__price">990 ₽</td>
+                        </tr>
+                        <tr class="service__row">
+                            <td class="service__text">Детский</td>
+                            <td class="service__text">30 мин.</td>
+                            <td class="service__price">490 ₽</td>
+                        </tr>
+                        <tr class="service__row">
+                            <td class="service__text">Антицеллюлитный</td>
+                            <td class="service__text">40 мин.</td>
+                            <td class="service__price">2350 ₽</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tabs__content">
+            2
+        </div>
+        <div class="tabs__content">
+            3
+        </div>
+        <div class="tabs__content">
+            4
+        </div>
+
+       <div class="additional__sliders_row row">
+           <div class="additional__sliders_col col-lg-6">
+            <div class="additional__sliders_slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide service-slide__item">
+                      <div class="service-slide__header">
+                          <img src="img/additional/slider/birthday.jpg" alt="">
+                      </div>
+                      <div class="service-slide__footer">
+                        <h3 class="title_small service-slide__title">Хотите необычный праздник 
+                            в детский день рождения?</h3>
+                        <div class="d-flex justify-content-between service-slide__icons ">
+                            <div class="service-slide__icons-item d-flex">
+                                <div class="service-slide__icons-img">
+                                    <img src="icons/clock.svg" alt="">
+                                </div>
+                                <p class="text color-white">
+                                    Время проведения: <br>
+                                    2 часа
+                                </p>
+                            </div>
+                            <div class="service-slide__icons-item d-flex">
+                                <div class="service-slide__icons-img">
+                                    <img src="icons/wallet.svg" alt="">
+                                </div>
+                                <p class="text color-white">
+                                    Стоимость: <br> 900 руб. с человека
+                                </p>
+                            </div>
+                        </div>
+                        <p class="service-slide__text color-text">Оплата включает входной билет. Минимальное количество участников 10. Игры с аниматором, морской квест, питание НЕ входит в стоимость, заказывается  индивидуально по меню нашего фудкорта.</p>
+                        <div class="text-left">
+                            <a href="" class="btn btn-big">Оставить заявку</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide service-slide__item">
+                    <div class="service-slide__header">
+                        <img src="img/additional/slider/groups.jpg" alt="">
+                    </div>
+                    <div class="service-slide__footer">
+                      <h3 class="title_small service-slide__title">Индивидуальное 
+                          обслуживание групп</h3>
+                      <div class="d-flex justify-content-between service-slide__icons ">
+                          <div class="service-slide__icons-item d-flex">
+                              <div class="service-slide__icons-img">
+                                  <img src="icons/wallet.svg" alt="">
+                              </div>
+                              <p class="text color-white">
+                                  Стоимость посещения  <br>
+                                  в выходной день: 1 400 руб.
+                              </p>
+                          </div>
+                          <div class="service-slide__icons-item d-flex">
+                              <div class="service-slide__icons-img">
+                                  
+                              </div>
+                              <p class="text color-white">
+                                  Стоимость посещения <br>
+                                  в будний день: 900 руб.
+                              </p>
+                          </div>
+                      </div>
+                      <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
+                      <div class="text-left">
+                          <a href="" class="btn btn-big">Оставить заявку</a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="swiper-button-prev white__arrow white__arrow-left"></div>
+                <div class="swiper-button-next white__arrow white__arrow-right"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+           </div>
+           <div class="additional__sliders_col col-lg-6">
+            <div class="additional__sliders_slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide service-slide__item">
+                      <div class="service-slide__header">
+                          <img src="img/additional/slider/groups.jpg" alt="">
+                      </div>
+                      <div class="service-slide__footer">
+                        <h3 class="title_small service-slide__title">Индивидуальное 
+                            обслуживание групп</h3>
+                        <div class="d-flex justify-content-between service-slide__icons ">
+                            <div class="service-slide__icons-item d-flex">
+                                <div class="service-slide__icons-img">
+                                    <img src="icons/wallet.svg" alt="">
+                                </div>
+                                <p class="text color-white">
+                                    Стоимость посещения  <br>
+                                    в выходной день: 1 400 руб.
+                                </p>
+                            </div>
+                            <div class="service-slide__icons-item d-flex">
+                                <div class="service-slide__icons-img">
+                                    
+                                </div>
+                                <p class="text color-white">
+                                    Стоимость посещения <br>
+                                    в будний день: 900 руб.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
+                        <div class="text-left">
+                            <a href="" class="btn btn-big">Оставить заявку</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide service-slide__item">
+                      <div class="service-slide__header">
+                          <img src="img/additional/slider/birthday.jpg" alt="">
+                      </div>
+                      <div class="service-slide__footer">
+                        <h3 class="title_small service-slide__title">Индивидуальное 
+                            обслуживание групп</h3>
+                        <div class="d-flex justify-content-between service-slide__icons ">
+                            <div class="service-slide__icons-item d-flex">
+                                <div class="service-slide__icons-img">
+                                    <img src="icons/wallet.svg" alt="">
+                                </div>
+                                <p class="text color-white">
+                                    Стоимость посещения  <br>
+                                    в выходной день: 1 400 руб.
+                                </p>
+                            </div>
+                            <div class="service-slide__icons-item d-flex">
+                                <div class="service-slide__icons-img">
+                                    
+                                </div>
+                                <p class="text color-white">
+                                    Стоимость посещения <br>
+                                    в будний день: 900 руб.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
+                        <div class="text-left">
+                            <a href="" class="btn btn-big">Оставить заявку</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev white__arrow white__arrow-left"></div>
+                <div class="swiper-button-next white__arrow white__arrow-right"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+           </div>
+       </div>
+    </div>
+</section>
+<section class="gift">
+
+  <div class="gift__shadow"></div>
+  <div class="gift__slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide gift-slide">
+          <div class="container">
+            <div class="gift-slide__inner">
+              <h3 class="title title_small title_sectional gift__title">Подарочный сертификат на курортную фотосессию</h3>
+              <div class="gift__text text">
+                <p>Посещение центра будет отличным подарком на день рождения или знаменательную дату</p>
+              </div>
+              <a href="" class="btn btn-big gift__btn">Купить сертификат</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide gift-slide">
+          <div class="container">
+            <div class="gift-slide__inner">
+              <h3 class="title title_small title_sectional gift__title">Подарочный сертификат на курортную фотосессию</h3>
+              <div class="gift__text text">
+                <p>Посещение центра будет отличным подарком на день рождения или знаменательную дату</p>
+              </div>
+              <a href="" class="btn btn-big gift__btn">Купить сертификат</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide gift-slide">
+          <div class="container">
+            <div class="gift-slide__inner">
+              <h3 class="title title_small title_sectional gift__title">Подарочный сертификат на курортную фотосессию</h3>
+              <div class="gift__text text">
+                <p>Посещение центра будет отличным подарком на день рождения или знаменательную дату</p>
+              </div>
+              <a href="" class="btn btn-big gift__btn">Купить сертификат</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide gift-slide">
+          <div class="container">
+            <div class="gift-slide__inner">
+              <h3 class="title title_small title_sectional gift__title">Подарочный сертификат на курортную фотосессию</h3>
+              <div class="gift__text text">
+                <p>Посещение центра будет отличным подарком на день рождения или знаменательную дату</p>
+              </div>
+              <a href="" class="btn btn-big gift__btn">Купить сертификат</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next white__arrow white__arrow-right gift-right gift-arrow"></div>
+      <div class="swiper-button-prev white__arrow white__arrow-left gift-left gift-arrow"></div>
+      <div class="swiper-pagination gift__pag"></div>
+  </div>
+
+</section>
+<section class="events position-relative">
+    <div class="events__inner">
+        <img src="/img/events/pail.png" class="img-underbg" alt="" style="
+        mix-blend-mode: multiply;
+        left: 22.08%;
+        top: 25.15%;
+        ">
+        <img src="img/events/fish.svg" class="img-underbg" alt="" style="
+        mix-blend-mode: multiply;
+        right: 23.58%;
+        top: 26.448%;
+        ">
+        <div class="container">
+            <h2 class="title title-small title-sectional events__title">Календарь мероприятий</h2>
+            <p class="text-center text">Короткий информационный текст о проводимых мероприятиях. <br>
+                Требуется ли дополнительная оплата за участие, предварительное бронирование.</p>
+
+
+            <div class="events__calendar calendar swiper-container">
+                <div class="swiper-button-prev green__arrow green__arrow-left"></div>
+                <div class="swiper-button-next green__arrow green__arrow-right"></div>
+                <div class="swiper-wrapper">
+                    <div class="calendar__item swiper-slide">
+                        <div class="calendar__header">
+                            <div class="calendar__title text-center">Апрель</div>
+                        </div>
+                        <div class="line line-green"></div>
+                        <div class="calendar__footer">
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="calendar__item swiper-slide">
+                        <div class="calendar__header">
+                            <div class="calendar__title text text-center">Май</div>
+                        </div>
+                        <div class="line line-green"></div>
+                        <div class="calendar__footer">
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="events__list swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper events__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide event">
+                    <div class="time">Четверг 15.00</div>
+                    <div class="age">0+</div>
+                    <div class="date">9 апреля</div>
+                    <div class="event__name text">Практика парения с цитрусами</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Воскресенье 18.00</div>
+                    <div class="age">14+</div>
+                    <div class="date">12 апреля</div>
+                    <div class="event__name text">Программа
+                        “Дыши легко”</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Суббота 15.00</div>
+                    <div class="age">7+</div>
+                    <div class="date">18 апреля</div>
+                    <div class="event__name text">Детский квест «Морские приключения»</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Понедельник 17.00</div>
+                    <div class="age">0+</div>
+                    <div class="date">20 апреля</div>
+                    <div class="event__name text">Практика парения с цитрусами</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Четверг 15.00</div>
+                    <div class="age">0+</div>
+                    <div class="date">9 апреля</div>
+                    <div class="event__name text">Практика парения с цитрусами</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Воскресенье 18.00</div>
+                    <div class="age">14+</div>
+                    <div class="date">12 апреля</div>
+                    <div class="event__name text">Программа
+                        “Дыши легко”</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Суббота 15.00</div>
+                    <div class="age">7+</div>
+                    <div class="date">18 апреля</div>
+                    <div class="event__name text">Детский квест «Морские приключения»</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                  <div class="swiper-slide event">
+                    <div class="time">Понедельник 17.00</div>
+                    <div class="age">0+</div>
+                    <div class="date">20 апреля</div>
+                    <div class="event__name text">Практика парения с цитрусами</div>
+                    <a href="" class="btn btn-event">Подробнее</a>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev green__arrow event__arrow event__arrow-left"></div>
+            <div class="swiper-button-next green__arrow event__arrow event__arrow-right"></div>
+        </div>
+    </div>
+</section>
+<section class="rules">
+    <div class="rules__inner">
+        <div class="container">
+            <h2 class="title">Ознакомьтесь с правилами <br> посещения центра</h2>
+            <div id="slider" class="position-relative">
+                <div class="dp-wrap">
+                    <div id="dp-slider">
+    
+                    <div class="dp_item" data-class="1" data-position="1">
+                        <div class="dp-content">
+                        <h2 class="title title_small text-white text-left">Что взять с собой в Центр?</h2>
+                        <p class="text-white font-weight-700"> Если Вы что-то забыли, не расстраивайтесь, всё можно приобрести в нашем магазине</p>
+                        <ul>
+                            <li>Сменную непромокаемую обувь.</li>
+                            <li>Купальник и плавки. У нас семейный Центр - купальник необходим, хотя есть мужская и женская баня.</li>
+                            <li>Веник, которым можно пользоваться в мужской и женской парной.</li>
+                            <li>Банную шапочку, которая поможет сохранить вашу голову от перегрева.</li>
+                            <li>Несколько полотенец.  Одно служит для вытирания тела, другое в качестве подстилки на лежак или в сауне.</li>
+                            <li>Халат. Сохранит тепло и укроет от ветра</li>
+                            <li>Мыльные принадлежности: Мыло, шампунь, гель для душа, мочалку, скрабы и прочее (моемся перед посещением саун и бассейна).</li>
+                            <li>Сменное бельё. </li>
+                            <li>Расчёски.</li> 
+                            <li>Средство для и от загара в летнее время.</li>
+                        </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dp_item" data-class="2" data-position="2">
+                        <div class="dp-content">
+    
+                        <h2>Slide 2</h2>
+                        <p> This is Slide 2 </p>
+                        
+                        </div>
+                    </div>
+    
+                    <div class="dp_item" data-class="3" data-position="3">
+                        <div class="dp-content">
+    
+                        <h2>Slide 3</h2>
+                        <p> This is Slide 3 </p>
+                        
+                        </div>
+                    </div>
+                    </div>
+    
+                    <span id="dp-next" class="green__arrow cardslider-arrow cardslider-right">
+                        <img src="img/rules/right.svg" alt="">
+                    </span>
+    
+                    <span id="dp-prev" class="green__arrow cardslider-arrow cardslider-left" >
+                     <img src="img/rules/right.svg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         </main>
         <footer class="footer">

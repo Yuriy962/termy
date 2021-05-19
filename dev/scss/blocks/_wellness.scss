@@ -1,0 +1,55 @@
+.wellness{
+    &__list{
+        margin-top: 40px;
+    }
+    &__item{
+        text-align: center;
+        flex: 0 0 20%;
+        padding: 0 15px;
+    }
+    &__img{
+        height: 166px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        img{
+            object-fit: scale-down;
+        }
+    }
+    &__descr{
+        margin-top: 20px;
+    }
+}
+
+.gallery{
+    display: flex;
+    margin: 50px 0 0;
+    overflow-x: auto;
+    &__item{
+        flex: 0 0 50%;
+        img{
+            width: 100%;
+        }
+    }
+    &_small{
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            flex: 0 0 50%;
+            display: flex;
+            align-items: stretch;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 1400px){
+    .gallery{
+        flex-wrap: wrap;
+        &__item{
+            flex: 0 0 100%;
+        }
+    }
+}

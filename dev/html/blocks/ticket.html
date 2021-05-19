@@ -1,21 +1,40 @@
 <article class="ticket">
+    <img src="img/ticket/ship.svg" class="img-underbg" alt="" style="
+        left: 85.9375%;
+        top: 14.895%;
+        transform: rotate(4.07deg);
+    ">
+    <img  src="img/ticket/seashell.svg" class="img-underbg" alt="" style="
+        left: 6.458%;
+        top: 42.557%;
+        transform: rotate(-3.34deg);
+    ">
+    <img  src="img/ticket/branch.png" class="img-underbg branch" alt="">
     <section class="booking">
         <div class="container">
             <h2 class="title">Купить билет</h2>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="booking__item"></div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="booking__item dropdown">
+                        <div class="booking__title">Выбрать длительность посещения </div>
+                        <p class="text">2,5 часа</p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="booking__item"></div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="booking__item dropdown">
+                        <div class="booking__title">Выбрать время входа</div>
+                        <p class="text">с 10.00 до 16.00</p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="booking__item"></div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="booking__item dropdown">
+                        <div class="booking__title">Выбрать категорию билета</div>
+                        <p class="text">Взрослый</p>
+                    </div>
                 </div>
 
                 <div class="col-lg-12">
                     <div class="booking__calendar">
-
                     </div>
                 </div>
             </div>
@@ -27,10 +46,10 @@
     </section>
     <section class="visit">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row visit__list">
+                <div class="col-xl-6 col-lg-12">
                     <div class="visit__item">
-                        <h3 class="title title_small">Стоимость посещения различается</h3>
+                        <h3 class="title title_small mt-0 text-left">Стоимость посещения различается</h3>
                         <p>
                             <ul>
                                 <li>в выходные, праздничные и будние дни</li>
@@ -40,17 +59,33 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="visit__item">
-                        
+                <div class="col-xl-6 col-lg-12">
+                    <div class="visit__item d-flex visit__pie">
+                        <div class="visit__item_left">
+                            <h3 class="text font-weight-bold">Посещаемость</h3>
+                            <div class="attendance dropdown">
+                                <p class="text">Понедельник</p>
+                            </div>
+                            <div class="graphic">
+                                <img src="../img/ticket/graphic.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="visit__item_right">
+                            <img src="../img/ticket/gift.svg" alt="">
+                            <h3 class="text visit__item_title">30 минут в подарок!</h3>
+                            <p class="visit__item_text">Покупая билет, вы оплачиваете тариф на свой выбор и получаете 30 минут в подарок на переодевание</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="delivery-desk">
+    <section class="deliverydesk">
         <div class="container">
-            
+            <div class="deliverydesk__form">
+                <h3 class="title title_small mt-0 text-left text-white">Купить абонимент</h3>
+                <div class="line"></div>
+            </div>
         </div>        
     </section>
 </article>

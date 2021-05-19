@@ -36,7 +36,6 @@ body.compensate-for-scrollbar {
     margin-right: 0px;
 }
 /*end fancybox*/
-@import 'variables';
 @import 'fonts';
 @import 'colors';
 @import 'buttons';
@@ -48,6 +47,11 @@ body.compensate-for-scrollbar {
 @import 'blocks/greeting';
 @import 'blocks/schema';
 @import 'blocks/ticket';
+@import 'blocks/wellness';
+@import 'blocks/additional';
+@import 'blocks/gift';
+@import 'blocks/events';
+@import 'plug/cardSlider';
 
 @import 'blocks/footer';
 
@@ -68,16 +72,13 @@ a{
 	color: #000;
 	text-decoration: none;
 	&:hover{
-		color: initial;
+		color: $accent;
 		text-decoration: none;
 	}
 }
 
 .underlined{
 	border-bottom: 1px dashed #6BDBCF;
-	&:hover{
-		border-color: transparent;
-	}
 }
 ul li::marker{
 	color: #17B8A8;
@@ -87,4 +88,18 @@ ul li{
 }
 ul li:first-child{
 	margin-top: 0;
+}
+.branch{
+	display: block;
+	left: 70.76%;
+	top: 51.1499%;
+	transform: rotate(-8.34deg);
+}
+@media(max-width: 1200px){
+	.branch{
+		display: block;
+		left: 70.76%;
+		top: 51.1499%;
+		transform: rotate(-8.34deg);
+	}
 }
