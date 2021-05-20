@@ -52,6 +52,11 @@ body.compensate-for-scrollbar {
 @import 'blocks/gift';
 @import 'blocks/events';
 @import 'plug/cardSlider';
+@import 'blocks/rules';
+@import 'blocks/reviews';
+@import 'blocks/entry';
+@import 'blocks/route';
+@import 'blocks/map';
 
 @import 'blocks/footer';
 
@@ -94,6 +99,9 @@ ul li:first-child{
 	left: 70.76%;
 	top: 51.1499%;
 	transform: rotate(-8.34deg);
+}
+main{
+	overflow: hidden;
 }
 @media(max-width: 1200px){
 	.branch{

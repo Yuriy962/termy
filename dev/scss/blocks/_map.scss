@@ -1,0 +1,38 @@
+.map{
+    position: relative;
+    min-height: 457px;
+    &__contacts{
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(204, 221, 219, 0.6);
+        border-radius: 5px;
+        left: 14.95%;
+        bottom: 19.25%;
+        min-width: 360px;
+        position: relative;
+        z-index: 1;
+    }
+    &__title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .phone{
+        margin-bottom: 15px;
+        display: block;
+        font-size: 19px;
+    }
+    &__header{
+        padding: 10px 20px;
+        text-align: center;
+    }
+    &__footer{
+        padding: 22px 38px 20px;
+    }
+    address{
+        font-size: 16px;
+        color: #000;
+    }
+
+    .line{
+        background-color: #CCE5E2;
+    }
+}

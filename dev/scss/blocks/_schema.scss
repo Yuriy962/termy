@@ -1,6 +1,8 @@
 .schema{
+    position: relative;
     padding: 10px 0 50px;
-    background: url('../img/schema/schema-bg.jpg') center/cover no-repeat;
+    background-color: rgba(245, 255, 254, 0.7);
+    overflow: hidden;
     &__img{
         display: block;
         margin-bottom: 40px;

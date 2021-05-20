@@ -1,4 +1,5 @@
 .events{
+    overflow: hidden;
     &__inner{
         min-height: 1078px;
         padding: 115px 0;
@@ -11,6 +12,13 @@
     }
     &__wrapper{
         padding: 50px 0;
+    }
+}
+@media (max-width: 1270px){
+    .event{
+        &__name{
+            min-height: 84px;
+        }
     }
 }
 
@@ -33,6 +41,26 @@
         border-radius: 10px;
         margin: 0 auto;
         height: 352px;
+    }
+    table{
+        width: 100%;
+    }
+    td{
+        width: calc( 100% / 7 );
+        text-align: center;
+    }
+    &__day{
+        width: 36px;
+        height: 36px;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+        &_active{
+            border-color: #F39712;
+        }
     }
 }
 

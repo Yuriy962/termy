@@ -19,13 +19,14 @@
             filter: blur(1px);
         }
         &:hover .greeting__descr{
-            bottom: 0;
+            transform: translateY(0); 
         }
         &:hover .greeting__title::after{
             opacity: 0;
         }
         &:hover .greeting__text{
             opacity: 1;
+            transform: translateY(0%);
         }
     }
     &__item{
@@ -34,6 +35,7 @@
         margin-bottom: 30px;
         overflow: hidden;
         cursor: pointer;
+        border-radius: 10px;
     }
     &__title{
         width: 100%;
@@ -62,14 +64,16 @@
         padding: 0 30px 30px;
         position: absolute;
         z-index: 1;
-        bottom: -100px;
         min-height: 80px;
         padding-right: 35px;
         color: inherit;
-        transition: 0.3s bottom;
+        transition: 0.3s display;
+        bottom: 0;
+        transform: translateY(calc(100% - 80px));
+        transition: 0.3s linear transform;
     }
     &__text{
-        transition: 0.3s opacity linear;
+        transition: 0.3s linear  opacity;
         opacity: 0;
     }
 }

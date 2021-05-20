@@ -10,72 +10,92 @@
     <body>
 
         <header class="header position-relative">
-            <div class="header__block header__block_left position-absolute left"></div>
-            <div class="header__block header__block_right position-absolute right"></div>
-            <div class="container position-relative z-index-1 d-lg-flex justify-content-lg-between">
-                <div class="header__left">
-                    <div class="header__top d-flex">
-                        <div class="icon d-flex align-items-start">
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/inst.svg" />
+            <div class="header__inner position-fixed">
+                <div class="header__block header__block_left position-absolute left"></div>
+                <div class="header__block header__block_right position-absolute right"></div>
+                <div class="container position-relative z-index-1 d-lg-flex justify-content-lg-between">
+                    <div class="header__left">
+                        <div class="header__top d-flex">
+                            <div class="icon d-flex align-items-start">
+                                <div class="icon__item">
+                                    <a href="https://www.instagram.com/" class="icon__inner">
+                                        <img src="icons/inst.svg" />
+                                    </a>
+                                </div>
+                                <div class="icon__item">
+                                    <a href="https://www.facebook.com/" class="icon__inner">
+                                        <img src="icons/fb.svg" />
+                                    </a>
+                                </div>
+                                <div class="icon__item">
+                                    <a href="https://vk.com/" class="icon__inner">
+                                        <img src="icons/vk.svg" />
+                                    </a>
                                 </div>
                             </div>
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/fb.svg" />
-                                </div>
-                            </div>
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/vk.svg" />
-                                </div>
+                            <div class="menu header__top_menu">
+                                <a href="#" class="header__link underlined">Детский день рождения</a>
+                                <a href="#" class="header__link underlined">Обслуживание групп</a>
                             </div>
                         </div>
-                        <div class="menu header__top_menu">
-                            <a href="#" class="header__link underlined">Детский день рождения</a>
-                            <a href="#" class="header__link underlined">Обслуживание групп</a>
+                        <div class="header__bottom">
+                            <div class="menu header__top_menu">
+                                <a href="#greeting" class="header__link">Познакомимся</a>
+                                <a href="#schema" class="header__link">Путешествие</a>
+                                <a href="#wellness" class="header__link">Услуги</a>
+                                <a href="#additional" class="header__link">Дополнительные услуги</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="header__bottom">
-                        <div class="menu header__top_menu">
-                            <a href="#" class="header__link">Познакомимся</a>
-                            <a href="#" class="header__link">Путешествие</a>
-                            <a href="#" class="header__link">Услуги</a>
-                            <a href="#" class="header__link">Дополнительные услуги</a>
+                    <div class="logo">
+                        <div class="logo__inner">
+                            <img src="icons/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__top d-flex">
+                            <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
+                            <a class="buy" href="https://sell.miratermy.ru/eticket/">Купить</a>
+                            <a class="btn">Билет</ф>
+                            <a class="btn">Сертификат</a>
+                            <div class="icon basket">
+                                <div class="icon__item">
+                                    <div class="icon__inner">
+                                        <img src="icons/basket.svg" />
+                                    </div>
+                                </div>
+                                <div class="basket__content">
+                                    <div class="basket__inner">
+                                        <div class="basket__list">
+                                            <div class="basket__item">
+                                                <div class="basket__title">Взрослый</div>
+                                                <p class="basket__price">900 руб.</p>
+                                            </div>
+                                            <div class="basket__item">
+                                                <div class="basket__title">Детский 7-14 лет</div>
+                                                <p class="basket__price">750 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="basket__btns d-flex justify-content-between">
+                                            <a href="" class="btn btn-transparent">Оформить заказ</a>
+                                            <a href="" class="btn">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__count">2</div>
+                            </div>
+                        </div>
+                        <div class="header__bottom">
+                            <div class="menu header__top_menu">
+                                <a href="#events" class="header__link">Мероприятия</a>
+                                <a href="#rules" class="header__link">ПРАВИЛА ПОСЕЩЕНИЯ</a>
+                                <a href="#reviews" class="header__link">ОТЗЫВЫ</a>
+                                <a href="#route" class="header__link">КАК ДОБРАТЬСЯ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="logo">
-                    <div class="logo__inner">
-                        <img src="icons/logo.svg" alt="">
-                    </div>
                 </div>
-                <div class="header__right">
-                    <div class="header__top d-flex">
-                        <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
-                        <a class="buy" href="https://sell.miratermy.ru/eticket/">Купить</a>
-                        <a class="btn">Билет</ф>
-                        <a class="btn">Сертификат</a>
-                        <div class="icon basket">
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/basket.svg" />
-                                </div>
-                            </div>
-                            <div class="basket__count">2</div>
-                        </div>
-                    </div>
-                    <div class="header__bottom">
-                        <div class="menu header__top_menu">
-                            <a href="#" class="header__link">Мероприятия</a>
-                            <a href="#" class="header__link">ПРАВИЛА ПОСЕЩЕНИЯ</a>
-                            <a href="#" class="header__link">ОТЗЫВЫ</a>
-                            <a href="#" class="header__link">КАК ДОБРАТЬСЯ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
 
             <!-- Mobile menu -->

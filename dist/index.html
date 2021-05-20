@@ -10,72 +10,92 @@
     <body>
 
         <header class="header position-relative">
-            <div class="header__block header__block_left position-absolute left"></div>
-            <div class="header__block header__block_right position-absolute right"></div>
-            <div class="container position-relative z-index-1 d-lg-flex justify-content-lg-between">
-                <div class="header__left">
-                    <div class="header__top d-flex">
-                        <div class="icon d-flex align-items-start">
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/inst.svg" />
+            <div class="header__inner position-fixed">
+                <div class="header__block header__block_left position-absolute left"></div>
+                <div class="header__block header__block_right position-absolute right"></div>
+                <div class="container position-relative z-index-1 d-lg-flex justify-content-lg-between">
+                    <div class="header__left">
+                        <div class="header__top d-flex">
+                            <div class="icon d-flex align-items-start">
+                                <div class="icon__item">
+                                    <a href="https://www.instagram.com/" class="icon__inner">
+                                        <img src="icons/inst.svg" />
+                                    </a>
+                                </div>
+                                <div class="icon__item">
+                                    <a href="https://www.facebook.com/" class="icon__inner">
+                                        <img src="icons/fb.svg" />
+                                    </a>
+                                </div>
+                                <div class="icon__item">
+                                    <a href="https://vk.com/" class="icon__inner">
+                                        <img src="icons/vk.svg" />
+                                    </a>
                                 </div>
                             </div>
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/fb.svg" />
-                                </div>
-                            </div>
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/vk.svg" />
-                                </div>
+                            <div class="menu header__top_menu">
+                                <a href="#" class="header__link underlined">Детский день рождения</a>
+                                <a href="#" class="header__link underlined">Обслуживание групп</a>
                             </div>
                         </div>
-                        <div class="menu header__top_menu">
-                            <a href="#" class="header__link underlined">Детский день рождения</a>
-                            <a href="#" class="header__link underlined">Обслуживание групп</a>
+                        <div class="header__bottom">
+                            <div class="menu header__top_menu">
+                                <a href="#greeting" class="header__link">Познакомимся</a>
+                                <a href="#schema" class="header__link">Путешествие</a>
+                                <a href="#wellness" class="header__link">Услуги</a>
+                                <a href="#additional" class="header__link">Дополнительные услуги</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="header__bottom">
-                        <div class="menu header__top_menu">
-                            <a href="#" class="header__link">Познакомимся</a>
-                            <a href="#" class="header__link">Путешествие</a>
-                            <a href="#" class="header__link">Услуги</a>
-                            <a href="#" class="header__link">Дополнительные услуги</a>
+                    <div class="logo">
+                        <div class="logo__inner">
+                            <img src="icons/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__top d-flex">
+                            <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
+                            <a class="buy" href="https://sell.miratermy.ru/eticket/">Купить</a>
+                            <a class="btn">Билет</ф>
+                            <a class="btn">Сертификат</a>
+                            <div class="icon basket">
+                                <div class="icon__item">
+                                    <div class="icon__inner">
+                                        <img src="icons/basket.svg" />
+                                    </div>
+                                </div>
+                                <div class="basket__content">
+                                    <div class="basket__inner">
+                                        <div class="basket__list">
+                                            <div class="basket__item">
+                                                <div class="basket__title">Взрослый</div>
+                                                <p class="basket__price">900 руб.</p>
+                                            </div>
+                                            <div class="basket__item">
+                                                <div class="basket__title">Детский 7-14 лет</div>
+                                                <p class="basket__price">750 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="basket__btns d-flex justify-content-between">
+                                            <a href="" class="btn btn-transparent">Оформить заказ</a>
+                                            <a href="" class="btn">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__count">2</div>
+                            </div>
+                        </div>
+                        <div class="header__bottom">
+                            <div class="menu header__top_menu">
+                                <a href="#events" class="header__link">Мероприятия</a>
+                                <a href="#rules" class="header__link">ПРАВИЛА ПОСЕЩЕНИЯ</a>
+                                <a href="#reviews" class="header__link">ОТЗЫВЫ</a>
+                                <a href="#route" class="header__link">КАК ДОБРАТЬСЯ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="logo">
-                    <div class="logo__inner">
-                        <img src="icons/logo.svg" alt="">
-                    </div>
                 </div>
-                <div class="header__right">
-                    <div class="header__top d-flex">
-                        <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
-                        <a class="buy" href="https://sell.miratermy.ru/eticket/">Купить</a>
-                        <a class="btn">Билет</ф>
-                        <a class="btn">Сертификат</a>
-                        <div class="icon basket">
-                            <div class="icon__item">
-                                <div class="icon__inner">
-                                    <img src="icons/basket.svg" />
-                                </div>
-                            </div>
-                            <div class="basket__count">2</div>
-                        </div>
-                    </div>
-                    <div class="header__bottom">
-                        <div class="menu header__top_menu">
-                            <a href="#" class="header__link">Мероприятия</a>
-                            <a href="#" class="header__link">ПРАВИЛА ПОСЕЩЕНИЯ</a>
-                            <a href="#" class="header__link">ОТЗЫВЫ</a>
-                            <a href="#" class="header__link">КАК ДОБРАТЬСЯ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
 
             <!-- Mobile menu -->
@@ -165,7 +185,7 @@
         </div>
         </div>
 </section>
-<section class="greeting">
+<section class="greeting" id="greeting">
     <div class="container">
         <h2 class="title">Познакомимся</h2>
         <div class="row">
@@ -277,22 +297,34 @@
         </div>
     </div>
 </section>
-<section class="schema">
+<section class="schema" id="schema">
+    <img src="img/schema/road-top.svg" class="img-underbg" alt="" style="
+    right: 23.125%;
+    top: -2%;
+    ">
+    <img src="img/schema/road-down.svg" class="img-underbg" alt="" style="
+    left: 7.9%;
+    bottom: -2%;
+    ">
+    <img src="img/schema/branch.svg" class="img-underbg" alt="" style="
+    right: 7.3%;
+    bottom: 28%;
+    ">
     <div class="container">
         <h2 class="title schema__title">Схема центра</h2>
         
         <picture class="schema__img">
             <source 
-            srcset="img/schema/schema-large.jpg">
+            srcset="img/schema/schema.png">
             <source 
-            srcset="img/schema/schema-900.jpg" media="(max-width: 1360px)">
+            srcset="img/schema/schema-900.png" media="(max-width: 1360px)">
             <source 
-            srcset="img/schema/schema-700.jpg" media="(max-width: 992px)">
+            srcset="img/schema/schema-700.png" media="(max-width: 992px)">
             <source 
-            srcset="img/schema/schema-540.jpg" media="(max-width: 768px)">
+            srcset="img/schema/schema-540.png" media="(max-width: 768px)">
             <source 
-            srcset="img/schema/schema-280.jpg" media="(max-width: 540px)">
-            <img src="img/schema/schema-large.jpg, img/schema/schema-900.jpg, img/schema/schema-700.jpg, img/schema/schema-540.jpg, img/schema/schema-280.jpg" alt="Схема">
+            srcset="img/schema/schema-280.png" media="(max-width: 540px)">
+            <img src="img/schema/schema-large.png, img/schema/schema-900.png, img/schema/schema-700.png, img/schema/schema-540.png, img/schema/schema-280.png" alt="Схема" class="position-relative">
         </picture>
         <div class="text-center">
             <a class="btn btn-big btn-sectional">путешествие 3D</a>
@@ -339,7 +371,7 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center mt-3">Нажимая, вы даёте разрешение на обработку персональных данных и соглашаетесь с <a href="" class="link">правилами посещения в центр</a></p>
+            <p class="text-center position-relative mt-3">Нажимая, вы даёте разрешение на обработку персональных данных и соглашаетесь с <a href="" class="link">правилами посещения в центр</a></p>
             <div class="text-center">
                 <a href="" class="btn btn-big">Купить билет</a>
             </div>
@@ -368,11 +400,11 @@
                                 <p class="text">Понедельник</p>
                             </div>
                             <div class="graphic">
-                                <img src="../img/ticket/graphic.svg" alt="">
+                                <img src="img/ticket/graphic.svg" alt="">
                             </div>
                         </div>
                         <div class="visit__item_right">
-                            <img src="../img/ticket/gift.svg" alt="">
+                            <img src="img/ticket/gift.svg" alt="">
                             <h3 class="text visit__item_title">30 минут в подарок!</h3>
                             <p class="visit__item_text">Покупая билет, вы оплачиваете тариф на свой выбор и получаете 30 минут в подарок на переодевание</p>
                         </div>
@@ -390,7 +422,7 @@
         </div>        
     </section>
 </article>
-<section class="wellness">
+<section class="wellness" id="wellness">
     <div class="container">
         <h3 class="title title-sectional">Центр здоровья и отдыха <br> Волжские термы</h3>
         <p class="text text-center">На территории центра могут отдохнуть:</p>
@@ -429,26 +461,34 @@
     </div>
     <div class="wellness__gallery gallery">
         <a href="" class="gallery__item">
-            <img src="/img/wellness/gallery/big.jpg" alt="">
+            <img src="img/wellness/gallery/big.jpg" alt="">
         </a>
 
         <div class="gallery__item gallery_small">
             <a href="" class="gallery_small__item">
-                <img src="/img/wellness/gallery/1.jpg" alt="">
+                <img src="img/wellness/gallery/1.jpg" alt="">
             </a>
             <a href="" class="gallery_small__item">
-                <img src="/img/wellness/gallery/2.jpg" alt="">
+                <img src="img/wellness/gallery/2.jpg" alt="">
             </a>
             <a href="" class="gallery_small__item">
-                <img src="/img/wellness/gallery/3.jpg" alt="">
+                <img src="img/wellness/gallery/3.jpg" alt="">
             </a>
             <a href="" class="gallery_small__item">
-                <img src="/img/wellness/gallery/4.jpg" alt="">
+                <img src="img/wellness/gallery/4.jpg" alt="">
             </a>
         </div>
     </div>
 </section>
-<section class="additional">
+<section class="additional" id="additional">
+    <img src="img/additional/turtle.png" class="img-underbg" alt="" style="
+    left: 5.88%;
+    top: 28.75%;
+    ">
+    <img src="img/additional/lizard.png" class="img-underbg" alt="" style="
+    right: 5.36%;
+    bottom: 2.59%;
+    ">
     <div class="container">
         <h3 class="title title-sectional additional__title">Дополнительные услуги</h3>
         <ul class="tabs">
@@ -726,7 +766,7 @@
   </div>
 
 </section>
-<section class="events position-relative">
+<section class="events position-relative" id="events">
     <div class="events__inner">
         <img src="/img/events/pail.png" class="img-underbg" alt="" style="
         mix-blend-mode: multiply;
@@ -756,53 +796,46 @@
                         <div class="calendar__footer">
                             <table>
                                 <tr>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                    <td>6</td>
-                                    <td>7</td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">1</div></td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
+                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">
+                                        30
+                                    </div></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -812,7 +845,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="calendar__item swiper-slide">
+                    <div class="calendar__day swiper-slide">
                         <div class="calendar__header">
                             <div class="calendar__title text text-center">Май</div>
                         </div>
@@ -949,7 +982,7 @@
         </div>
     </div>
 </section>
-<section class="rules">
+<section class="rules" id="rules">
     <div class="rules__inner">
         <div class="container">
             <h2 class="title">Ознакомьтесь с правилами <br> посещения центра</h2>
@@ -959,7 +992,7 @@
     
                     <div class="dp_item" data-class="1" data-position="1">
                         <div class="dp-content">
-                        <h2 class="title title_small text-white text-left">Что взять с собой в Центр?</h2>
+                        <h2 class="title title_small text-white text-left short">Что взять с собой в Центр?</h2>
                         <p class="text-white font-weight-700"> Если Вы что-то забыли, не расстраивайтесь, всё можно приобрести в нашем магазине</p>
                         <ul>
                             <li>Сменную непромокаемую обувь.</li>
@@ -1007,13 +1040,142 @@
         </div>
     </div>
 </section>
+<section class="reviews" id="reviews">
+    <div class="container">
+        <h2 class="title sectional-title reviews__title">Отзывы</h2>
+        <div class="elfsight-app-443e227d-b506-4eee-b31c-be23243bff24"></div>
+    </div>
+</section>
+<section class="entry">
+    <div class="container">
+        <div class="entry__form">
+            <h2 class="title title-sectional entry__title">Анкета для посещения центра</h2>
+        </div>
+    </div>
+</section>
+<section class="route" id="route">
+    <div class="route__inner">
+        <img src="img/route/road-top.svg" class="img-underbg" alt="" style="
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        ">
+        <img src="img/route/road-bottom.svg" class="img-underbg" alt="" style="
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        ">
+        <img src="img/route/bus.svg" class="img-underbg" alt="" style="
+        bottom: 1.675%;
+        left: 38.25%;
+        ">
+        <img src="img/route/seashell-second.svg" class="img-underbg" alt="" style="
+        left: 9.22%;
+        top: 20.1%;
+        ">
+        <div class="container">
+            <h2 class="title title-sectional route__title">Как добраться</h2>
+            <div class="route__list row">
+                <div class="col-lg-3">
+                    <div class="route__item">
+                        <div class="route__title">Из Самары</div>
+                        <div class="route__text">
+                            Время поездки на автобусе составит от пригородного автовокзала Самара, расположенного по адресу Самара, Вилоновская, 138, до автовокзала в Новокуйбышевске один час двадцать минут.
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="route__item">
+                        <div class="route__title">Из Южного города</div>
+                        <div class="route__text">
+                            Время поездки на автобусе составит от пригородного автовокзала Самара, расположенного по адресу Самара, Вилоновская, 138, до автовокзала в Новокуйбышевске один час двадцать минут.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="route__item">
+                        <div class="route__title">Из Тольятти</div>
+                        <div class="route__text">
+                            Время поездки на автобусе составит от пригородного автовокзала Самара, расположенного по адресу Самара, Вилоновская, 138, до автовокзала в Новокуйбышевске один час двадцать минут.
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="route__item">
+                        <div class="route__title">Из Сызрани</div>
+                        <div class="route__text">
+                            Время поездки на автобусе составит от пригородного автовокзала Самара, расположенного по адресу Самара, Вилоновская, 138, до автовокзала в Новокуйбышевске один час двадцать минут.
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map">
+    <div class="map__contacts position-absolute">
+        <div class="map__header">
+            <h2 class="title title_small map__title">Контакты</h2>
+        </div>
+        <div class="line"></div>
+        <div class="map__footer">
+            <a href="tel:+79272072443" class="phone">+7 927 207 24 43</a>
+            <address>Самарская область <br>
+                Новокуйбышевск, ул. Суворова 2</address>
+        </div>
+    </div>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A935ecaccfa030000a607632df855edd8d964e0430b6b9e62b879cf4166e7a31d&amp;source=constructor" width="100%" height="457" frameborder="0" style="
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+"></iframe>
+</section>
 
         </main>
         <footer class="footer">
+            <div class="footer__inner">
+                <div class="container position-relative d-lg-flex justify-content-lg-between align-items-center">
+                    <div class="logo logo_footer position-relative">
+                        <div class="logo__inner">
+                            <img src="icons/logo-footer.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="copyright">&copy; 2021 «Волжские термы»</p>
 
+                        <a href="">Политика обработки персональных данных</a>
+                        <a href="">Правила посещения центра</a>
+
+
+                    <p>Создание сайта — <a href="">Seo Простор</a></p>
+                    <div class="icon icon_white d-flex align-items-start">
+                        <div class="icon__item icon__item_white">
+                            <a href="https://www.instagram.com/" class="icon__inner">
+                                <img src="icons/inst-green.svg">
+                            </a>
+                        </div>
+                        <div class="icon__item icon__item_white">
+                            <a href="https://www.facebook.com/" class="icon__inner">
+                                <img src="icons/fb-green.svg">
+                            </a>
+                        </div>
+                        <div class="icon__item icon__item_white">
+                            <a href="https://vk.com/" class="icon__inner">
+                                <img src="icons/vk-green.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </body>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="js/libs.min.js"></script>
     <script src="js/all.min.js"></script>
 </html>

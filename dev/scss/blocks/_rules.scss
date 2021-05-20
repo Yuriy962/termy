@@ -5,3 +5,15 @@
         padding: 100px 0 62px;
     }
 }
+
+.short{
+    position: relative;
+    padding-left: 100px;
+    &::before{
+        content: url('../img/rules/shorts.svg');
+        position: absolute;
+        width: 80px;
+        height: 80px; 
+        left: 0;
+    }
+}

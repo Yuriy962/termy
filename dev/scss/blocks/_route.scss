@@ -1,0 +1,19 @@
+.route{
+    position: relative;
+    overflow: hidden;
+    &__inner{
+        min-height: 597px;
+        background-color: #E6FAF8;
+        padding: 100px 0 75px;
+    }
+    &__title{
+        margin-top: 0;
+    }
+    &__item{
+        background-color: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(204, 221, 219, 0.6);
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+}

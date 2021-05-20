@@ -100,6 +100,12 @@ $(document).ready(function () {
     $('.dropdown').on('click', function () {
        $(this).toggleClass('dropdown_active'); 
     });
+    $('.calendar__day').on('click', function () {
+        $(this).toggleClass('calendar__day_active'); 
+     });
+     $('.basket').on('click', function () {
+        $(this).find('.basket__content').toggleClass('basket__content_active'); 
+     });
 
         //Табы
     $('ul.tabs').on('click', 'li:not(.tabs__item_active)', function() {

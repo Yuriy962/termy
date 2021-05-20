@@ -20,9 +20,18 @@
     &-sectional{
         margin-top: 40px;
         margin-bottom: 80px;
+        position: relative;
     }
     &-event{
         padding: 15px 25px;
+    }
+    &-transparent{
+        background-color: transparent;
+        border: 2px solid #fff;
+        &:hover{
+            background-color: #fff;
+            color: $accent;
+        }
     }
 }
 .buy{
@@ -35,5 +44,8 @@
     .btn{
         font-size: 13px;
         padding: 5px 10px;
+        &-big{
+            padding: 25px 48px;
+        }
     }
 }
