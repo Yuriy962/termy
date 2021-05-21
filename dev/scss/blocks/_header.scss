@@ -109,6 +109,13 @@
         }
     }
 }
+@media (max-width: 1200px){
+    .logo{
+        &.logo_footer{
+            width: auto;
+        }
+    }
+}
 .menu{
     display: flex;
     justify-content: space-between;
@@ -158,11 +165,13 @@
         height: 187px;
         right: 0;
         top: 50px;
+        transform: translateY(-300px);
+        transition: .2s all;
         opacity: 0;
-        z-index: -1;
+        z-index: 10;
         &_active{
             opacity: 1;
-            z-index: 10;
+            transform: translateY(0);
         }
     }
     &__item{
@@ -189,6 +198,15 @@
         }
         p{
             margin: 0;
+        }
+    }
+
+    &__btns a{
+        text-align: center;
+        flex: 0 0 50%;
+        padding: 10px;
+        &:last-child{
+            flex: 0 0 45%;
         }
     }
     

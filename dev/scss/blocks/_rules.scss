@@ -2,7 +2,14 @@
     background-color: $light-blue;
     min-height: 986px;
     &__inner{
-        padding: 100px 0 62px;
+        padding: 50px 0 62px;
+    }
+}
+@media (max-width: 1200px){
+    .rules{
+        &__inner{
+            padding: 1px 0 100px;
+        }
     }
 }
 

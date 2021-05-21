@@ -164,7 +164,6 @@
 .site-btn {
   color: #fff;
   font-size: 18px;
-  font-family: "Circular Std Medium";
   background: #FA8282;
   padding: 14px 43px;
   display: inline-block;
@@ -193,5 +192,31 @@
     }
     &-left{
         left: -15%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+    .dp-wrap{
+        padding: 0 50px;
+    }
+    .dp_item{
+        width: 70%;
+    }
+    #dp-next {
+        right: 15%;
+    }
+    #dp-prev {
+        left: -10px;
+    }
+}
+@media (max-width: 1200px){
+    .dp-slider{
+        width: 70%;
+    }
+    .dp-content{
+        padding: 20px 40px;
+        font-size: 15px;
+    }
+    #dp-slider .dp_item:first-child {
+        max-height: 650px;
     }
 }

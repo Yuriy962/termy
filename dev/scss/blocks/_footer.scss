@@ -26,3 +26,55 @@
         }
     }
 }
+
+.form{
+    box-shadow: 0px 4px 40px rgba(204, 221, 219, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    &__title{
+        margin-top: 0;
+        line-height: 45px;
+    }
+    label{
+        margin: 0;
+        font-size: 18px;
+        text-align: left;
+    }
+    &__inputs{
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 46px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 48%;
+    }
+    &__input{
+        background-color: #FBFAFA;
+        padding: 10px 20px;
+        color: #162022;
+        border: 1px solid #F2EFEF;
+        margin-top: 15px;
+        &:hover{
+            color: #000;
+        }
+    }
+    &__text{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        border: none;
+    }
+}
+
+@media (min-width: 992px){
+    .form{
+        max-width: 896px;
+    }
+}
+
+.fancybox-button.fancybox-close-small{
+    
+}

@@ -21,7 +21,7 @@
 
 $(document).ready(function () {
     $().fancybox();
-    $('a[href^="#"]').on('click', function() {
+    $('a[href^="#"]:not(a[href="#request"])').on('click', function() {
         let href = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(href).offset().top
@@ -82,18 +82,25 @@ $(document).ready(function () {
     {
         slidesPerView: 1,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+            nextEl: ".swiper-button-next.calendar__arrow",
+            prevEl: ".swiper-button-prev.calendar__arrow",
+        }
     });
     var EventsSwiper = new Swiper(".events__list",
     {
-        slidesPerView: 4,
         spaceBetween: 30,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next.event__arrow.event__arrow-right",
+            prevEl: ".swiper-button-prev.event__arrow.event__arrow-left",
         },
+        breakpoints:  {
+            1200:{
+                slidesPerView: 4,
+            },
+            992:{
+                slidesPerView: 3,
+            }
+        }
     });
 
 
@@ -103,7 +110,7 @@ $(document).ready(function () {
     $('.calendar__day').on('click', function () {
         $(this).toggleClass('calendar__day_active'); 
      });
-     $('.basket').on('click', function () {
+     $('.basket.icon').on('click', function () {
         $(this).find('.basket__content').toggleClass('basket__content_active'); 
      });
 
@@ -113,6 +120,8 @@ $(document).ready(function () {
             .addClass('tabs__item_active').siblings().removeClass('tabs__item_active')
             .closest('div.container').find('div.tabs__content').removeClass('tabs__content_active').eq($(this).index()).addClass('tabs__content_active');
     });
+
+    $().fancybox();
 
 
 /*-------------------<cardSlider>------------------------------------------------------*/
@@ -179,6 +188,3 @@ $(document).ready(function () {
     })();
 /*---------</cardSlider>-----------------------------------------------------------------*/
 });
-
-
-

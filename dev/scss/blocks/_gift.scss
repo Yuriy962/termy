@@ -10,8 +10,6 @@
         bottom: 0;
         background: linear-gradient(90deg,#2b352f -31.52%,rgba(57,65,60,0) 67.92%);
     }
-    &__inner{
-    }
     &__slider{
         padding: 163px 0;
     }
@@ -72,6 +70,13 @@
         }
         &-right{
             right: calc( 50% - 480px - 20px );
+        }
+    }
+}
+@media (max-width: 1200px){
+    .gift{
+        &__title{
+            line-height: 60px;
         }
     }
 }

@@ -144,14 +144,39 @@
         }
     }
 }
+@media (max-width: 1300px){
+    .service{
+        &-slide{
+            &__icons-item{
+                .text{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px){
     .service{
+        font-size: 18px;
         &__row{
-            &:first-child{
-                width: 50%;
-            }
             td{
                 width: 25%;
+                &:first-child{
+                    width: 50%;
+                }
+            }
+        }
+        &-slide{
+            &__header{
+                height: 250px;
+            }
+            &__title{
+                line-height: 38px;
+                min-height: 114px;
+            }
+            &__text{
+                min-height: 97px;
             }
         }
     }

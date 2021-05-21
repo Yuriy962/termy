@@ -34,8 +34,8 @@
                                 </div>
                             </div>
                             <div class="menu header__top_menu">
-                                <a href="#" class="header__link underlined">Детский день рождения</a>
-                                <a href="#" class="header__link underlined">Обслуживание групп</a>
+                                <a href="#birthday" class="header__link underlined">Детский день рождения</a>
+                                <a href="#groups" class="header__link underlined">Обслуживание групп</a>
                             </div>
                         </div>
                         <div class="header__bottom">
@@ -56,8 +56,8 @@
                         <div class="header__top d-flex">
                             <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
                             <a class="buy" href="https://sell.miratermy.ru/eticket/">Купить</a>
-                            <a class="btn">Билет</ф>
-                            <a class="btn">Сертификат</a>
+                            <a href="#ticket" class="btn">Билет</ф>
+                            <a href="#gift" class="btn">Сертификат</a>
                             <div class="icon basket">
                                 <div class="icon__item">
                                     <div class="icon__inner">
@@ -114,7 +114,7 @@
                         <h1 class="promo__title">Городской курорт <br> 
                             в Самарской области</h1>
                         <h3 class="promo__subtitle">Европейский отдых у дома</h3>
-                        <a href="#" class="btn btn-big">Купить билет</a>
+                        <a href="#request" data-fancybox class="btn btn-big">Купить билет</a>
                     </div>
                     <div class="promo__mark position-absolute">
                         <img src="img/promo/mark.svg" alt="">
@@ -128,7 +128,7 @@
                         <h1 class="promo__title">Городской курорт <br> 
                             в Самарской области</h1>
                         <h3 class="promo__subtitle">Европейский отдых у дома</h3>
-                        <a href="#" class="btn btn-big">Купить билет</a>
+                        <a href="#request" data-fancybox class="btn btn-big">Купить билет</a>
                     </div>
                     <div class="promo__mark position-absolute">
                         <img src="img/promo/mark.svg" alt="">
@@ -142,7 +142,7 @@
                         <h1 class="promo__title">Городской курорт <br> 
                             в Самарской области</h1>
                         <h3 class="promo__subtitle">Европейский отдых у дома</h3>
-                        <a href="#" class="btn btn-big">Купить билет</a>
+                        <a href="#request" data-fancybox class="btn btn-big">Купить билет</a>
                     </div>
                     <div class="promo__mark position-absolute">
                         <img src="img/promo/mark.svg" alt="">
@@ -156,7 +156,7 @@
                         <h1 class="promo__title">Городской курорт <br> 
                             в Самарской области</h1>
                         <h3 class="promo__subtitle">Европейский отдых у дома</h3>
-                        <a href="#" class="btn btn-big">Купить билет</a>
+                        <a href="#request" data-fancybox class="btn btn-big">Купить билет</a>
                     </div>
                     <div class="promo__mark position-absolute">
                         <img src="img/promo/mark.svg" alt="">
@@ -193,7 +193,7 @@
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
-                        <img src="img/greeting/1.jpg" alt="" class="img-bg">
+                        <img src="img/greeting/1.jpg" alt="" class="img-bg greeting__img">
                         <div class="greeting__descr">
                             <h3 class="greeting__title">
                                 Шесть бассейнов, работающих круглый год
@@ -209,7 +209,7 @@
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
-                        <img src="img/greeting/2.jpg" alt="" class="img-bg">
+                        <img src="img/greeting/2.jpg" alt="" class="img-bg greeting__img">
                         <div class="greeting__descr">
                             <h3 class="greeting__title">
                                 10 бань и саун, 
@@ -226,7 +226,7 @@
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
-                        <img src="img/greeting/3.jpg" alt="" class="img-bg">
+                        <img src="img/greeting/3.jpg" alt="" class="img-bg greeting__img">
                         <div class="greeting__descr">
                             <h3 class="greeting__title">
                                 Ресторан в апельсиновой 
@@ -243,7 +243,7 @@
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
-                        <img src="img/greeting/4.jpg" alt="" class="img-bg">
+                        <img src="img/greeting/4.jpg" alt="" class="img-bg greeting__img">
                         <div class="greeting__descr">
                             <h3 class="greeting__title">
                                 Женское и мужское 
@@ -260,7 +260,7 @@
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
-                        <img src="img/greeting/5.jpg" alt="" class="img-bg">
+                        <img src="img/greeting/5.jpg" alt="" class="img-bg greeting__img">
                         <div class="greeting__descr">
                             <h3 class="greeting__title">
                                 Развлечения 
@@ -277,7 +277,7 @@
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
-                        <img src="img/greeting/6.jpg" alt="" class="img-bg">
+                        <img src="img/greeting/6.jpg" alt="" class="img-bg greeting__img">
                         <div class="greeting__descr">
                             <h3 class="greeting__title">
                                 Расслабляющий массаж, 
@@ -331,7 +331,7 @@
         </div>
     </div>
 </section>
-<article class="ticket">
+<article class="ticket" id="ticket">
     <img src="img/ticket/ship.svg" class="img-underbg" alt="" style="
         left: 85.9375%;
         top: 14.895%;
@@ -342,27 +342,192 @@
         top: 42.557%;
         transform: rotate(-3.34deg);
     ">
-    <img  src="img/ticket/branch.png" class="img-underbg branch" alt="">
+    <img src="img/ticket/branch.png" class="img-underbg branch" alt="">
     <section class="booking">
         <div class="container">
-            <h2 class="title">Купить билет</h2>
+            <h2 class="title ticket__title">Купить билет</h2>
             <div class="row">
                 <div class="col-xl-4 col-lg-6">
                     <div class="booking__item dropdown">
                         <div class="booking__title">Выбрать длительность посещения </div>
                         <p class="text">2,5 часа</p>
+                        <div class="booking-drop dropdown__content">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__list">
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Взрослый</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">2</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Детский 0-6 лет</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">0</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Детский 7- 13 лет</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">1</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Золотой возраст</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">0</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn btn-big btn-indrop">Выбрать</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="booking__item dropdown">
                         <div class="booking__title">Выбрать время входа</div>
                         <p class="text">с 10.00 до 16.00</p>
+                        <div class="booking-drop dropdown__content">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__list">
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Взрослый</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">2</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Детский 0-6 лет</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">0</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Детский 7- 13 лет</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">1</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Золотой возраст</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">0</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn btn-big btn-indrop">Выбрать</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="booking__item dropdown">
                         <div class="booking__title">Выбрать категорию билета</div>
                         <p class="text">Взрослый</p>
+                        <div class="booking-drop dropdown__content">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__list">
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Взрослый</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">2</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Детский 0-6 лет</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">0</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Детский 7- 13 лет</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">1</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <div class="dropdown__title text">Золотой возраст</div>
+                                        <div class="counter">
+                                            <div class="counter__btn">
+                                                <img src="icons/minus.svg" alt="">
+                                            </div>
+                                            <div class="counter__quantity">0</div>
+                                            <div class="counter__btn">
+                                                <img src="icons/plus.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn btn-big btn-indrop">Выбрать</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -398,6 +563,33 @@
                             <h3 class="text font-weight-bold">Посещаемость</h3>
                             <div class="attendance dropdown">
                                 <p class="text">Понедельник</p>
+                                <div class="visit-drop dropdown__content">
+                                    <div class="dropdown__inner ">
+                                        <div class="dropdown__list">
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Понедельник</div>
+                                            </div>
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Вторник</div>
+                                            </div>
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Среда</div>
+                                            </div>
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Четверг</div>
+                                            </div>
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Пятница</div>
+                                            </div>
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Суббота</div>
+                                            </div>
+                                            <div class="visit-drop__item dropdown__item">
+                                                <div class="dropdown__title text">Воскресенье</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="graphic">
                                 <img src="img/ticket/graphic.svg" alt="">
@@ -460,21 +652,21 @@
         </div>
     </div>
     <div class="wellness__gallery gallery">
-        <a href="" class="gallery__item">
+        <a href="" data-fancybox="gallery" data-src="img/wellness/gallery/big.jpg" class="gallery__item">
             <img src="img/wellness/gallery/big.jpg" alt="">
         </a>
 
         <div class="gallery__item gallery_small">
-            <a href="" class="gallery_small__item">
+            <a href="" data-fancybox="gallery" data-src="img/wellness/gallery/1.jpg" class="gallery_small__item fancybox">
                 <img src="img/wellness/gallery/1.jpg" alt="">
             </a>
-            <a href="" class="gallery_small__item">
+            <a href="" data-fancybox="gallery" data-src="img/wellness/gallery/2.jpg" class="gallery_small__item fancybox">
                 <img src="img/wellness/gallery/2.jpg" alt="">
             </a>
-            <a href="" class="gallery_small__item">
+            <a href="" data-fancybox="gallery" data-src="img/wellness/gallery/3.jpg" class="gallery_small__item fancybox">
                 <img src="img/wellness/gallery/3.jpg" alt="">
             </a>
-            <a href="" class="gallery_small__item">
+            <a href="" data-fancybox="gallery" data-src="img/wellness/gallery/4.jpg" class="gallery_small__item fancybox">
                 <img src="img/wellness/gallery/4.jpg" alt="">
             </a>
         </div>
@@ -559,7 +751,7 @@
            <div class="additional__sliders_col col-lg-6">
             <div class="additional__sliders_slider swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide service-slide__item">
+                  <div class="swiper-slide service-slide__item" id="birthday">
                       <div class="service-slide__header">
                           <img src="img/additional/slider/birthday.jpg" alt="">
                       </div>
@@ -587,11 +779,11 @@
                         </div>
                         <p class="service-slide__text color-text">Оплата включает входной билет. Минимальное количество участников 10. Игры с аниматором, морской квест, питание НЕ входит в стоимость, заказывается  индивидуально по меню нашего фудкорта.</p>
                         <div class="text-left">
-                            <a href="" class="btn btn-big">Оставить заявку</a>
+                            <a href="#request" data-fancybox class="btn btn-big">Оставить заявку</a>
                         </div>
                       </div>
                   </div>
-                  <div class="swiper-slide service-slide__item">
+                  <div class="swiper-slide service-slide__item" id="groups">
                     <div class="service-slide__header">
                         <img src="img/additional/slider/groups.jpg" alt="">
                     </div>
@@ -620,7 +812,7 @@
                       </div>
                       <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
                       <div class="text-left">
-                          <a href="" class="btn btn-big">Оставить заявку</a>
+                          <a href="#request" data-fancybox class="btn btn-big">Оставить заявку</a>
                       </div>
                     </div>
                 </div>
@@ -663,7 +855,7 @@
                         </div>
                         <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
                         <div class="text-left">
-                            <a href="" class="btn btn-big">Оставить заявку</a>
+                            <a href="#request" data-fancybox="request" class="btn btn-big">Оставить заявку</a>
                         </div>
                       </div>
                   </div>
@@ -696,7 +888,7 @@
                         </div>
                         <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
                         <div class="text-left">
-                            <a href="" class="btn btn-big">Оставить заявку</a>
+                            <a href="#request" data-fancybox class="btn btn-big">Оставить заявку</a>
                         </div>
                       </div>
                   </div>
@@ -710,7 +902,7 @@
        </div>
     </div>
 </section>
-<section class="gift">
+<section class="gift" id="gift">
 
   <div class="gift__shadow"></div>
   <div class="gift__slider swiper-container">
@@ -785,8 +977,8 @@
 
 
             <div class="events__calendar calendar swiper-container">
-                <div class="swiper-button-prev green__arrow green__arrow-left"></div>
-                <div class="swiper-button-next green__arrow green__arrow-right"></div>
+                <div class="swiper-button-prev calendar__arrow green__arrow green__arrow-left"></div>
+                <div class="swiper-button-next calendar__arrow green__arrow green__arrow-right"></div>
                 <div class="swiper-wrapper">
                     <div class="calendar__item swiper-slide">
                         <div class="calendar__header">
@@ -796,112 +988,46 @@
                         <div class="calendar__footer">
                             <table>
                                 <tr>
+                                    <td></td>
+                                    <td></td>
                                     <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">2</div></td>
+                                    <td><div class="calendar__day">3</div></td>
+                                    <td><div class="calendar__day">4</div></td>
+                                    <td><div class="calendar__day">5</div></td>
                                 </tr>
                                 <tr>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">6</div></td>
+                                    <td><div class="calendar__day">7</div></td>
+                                    <td><div class="calendar__day">8</div></td>
+                                    <td><div class="calendar__day">9</div></td>
+                                    <td><div class="calendar__day">10</div></td>
+                                    <td><div class="calendar__day">11</div></td>
+                                    <td><div class="calendar__day">12</div></td>
                                 </tr>
                                 <tr>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">13</div></td>
+                                    <td><div class="calendar__day">14</div></td>
+                                    <td><div class="calendar__day">15</div></td>
+                                    <td><div class="calendar__day">16</div></td>
+                                    <td><div class="calendar__day">17</div></td>
+                                    <td><div class="calendar__day">18</div></td>
+                                    <td><div class="calendar__day">19</div></td>
                                 </tr>
                                 <tr>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">1</div></td>
+                                    <td><div class="calendar__day">20</div></td>
+                                    <td><div class="calendar__day">21</div></td>
+                                    <td><div class="calendar__day">22</div></td>
+                                    <td><div class="calendar__day">23</div></td>
+                                    <td><div class="calendar__day">24</div></td>
+                                    <td><div class="calendar__day">25</div></td>
+                                    <td><div class="calendar__day">26</div></td>
                                 </tr>
                                 <tr>
-                                    <td><div class="calendar__day">1</div></td>
-                                    <td><div class="calendar__day">
-                                        30
-                                    </div></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="calendar__day swiper-slide">
-                        <div class="calendar__header">
-                            <div class="calendar__title text text-center">Май</div>
-                        </div>
-                        <div class="line line-green"></div>
-                        <div class="calendar__footer">
-                            <table>
-                                <tr>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                    <td>6</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td><div class="calendar__day">27</div></td>
+                                    <td><div class="calendar__day">28</div></td>
+                                    <td><div class="calendar__day">29</div></td>
+                                    <td><div class="calendar__day">30</div></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -992,28 +1118,28 @@
     
                     <div class="dp_item" data-class="1" data-position="1">
                         <div class="dp-content">
-                        <h2 class="title title_small text-white text-left short">Что взять с собой в Центр?</h2>
-                        <p class="text-white font-weight-700"> Если Вы что-то забыли, не расстраивайтесь, всё можно приобрести в нашем магазине</p>
-                        <ul>
-                            <li>Сменную непромокаемую обувь.</li>
-                            <li>Купальник и плавки. У нас семейный Центр - купальник необходим, хотя есть мужская и женская баня.</li>
-                            <li>Веник, которым можно пользоваться в мужской и женской парной.</li>
-                            <li>Банную шапочку, которая поможет сохранить вашу голову от перегрева.</li>
-                            <li>Несколько полотенец.  Одно служит для вытирания тела, другое в качестве подстилки на лежак или в сауне.</li>
-                            <li>Халат. Сохранит тепло и укроет от ветра</li>
-                            <li>Мыльные принадлежности: Мыло, шампунь, гель для душа, мочалку, скрабы и прочее (моемся перед посещением саун и бассейна).</li>
-                            <li>Сменное бельё. </li>
-                            <li>Расчёски.</li> 
-                            <li>Средство для и от загара в летнее время.</li>
-                        </ul>
+                            <h2 class="title title_small text-white text-left short">Что взять с собой в Центр?</h2>
+                            <p class="text-white font-weight-700"> Если Вы что-то забыли, не расстраивайтесь, всё можно приобрести в нашем магазине</p>
+                            <ul>
+                                <li>Сменную непромокаемую обувь.</li>
+                                <li>Купальник и плавки. У нас семейный Центр - купальник необходим, хотя есть мужская и женская баня.</li>
+                                <li>Веник, которым можно пользоваться в мужской и женской парной.</li>
+                                <li>Банную шапочку, которая поможет сохранить вашу голову от перегрева.</li>
+                                <li>Несколько полотенец.  Одно служит для вытирания тела, другое в качестве подстилки на лежак или в сауне.</li>
+                                <li>Халат. Сохранит тепло и укроет от ветра</li>
+                                <li>Мыльные принадлежности: Мыло, шампунь, гель для душа, мочалку, скрабы и прочее (моемся перед посещением саун и бассейна).</li>
+                                <li>Сменное бельё. </li>
+                                <li>Расчёски.</li> 
+                                <li>Средство для и от загара в летнее время.</li>
+                            </ul>
                         </div>
                     </div>
     
                     <div class="dp_item" data-class="2" data-position="2">
                         <div class="dp-content">
     
-                        <h2>Slide 2</h2>
-                        <p> This is Slide 2 </p>
+                            <h2>Slide 2</h2>
+                            <p> This is Slide 2 </p>
                         
                         </div>
                     </div>
@@ -1021,8 +1147,8 @@
                     <div class="dp_item" data-class="3" data-position="3">
                         <div class="dp-content">
     
-                        <h2>Slide 3</h2>
-                        <p> This is Slide 3 </p>
+                            <h2>Slide 3</h2>
+                            <p> This is Slide 3 </p>
                         
                         </div>
                     </div>
@@ -1076,7 +1202,7 @@
         <div class="container">
             <h2 class="title title-sectional route__title">Как добраться</h2>
             <div class="route__list row">
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4">
                     <div class="route__item">
                         <div class="route__title">Из Самары</div>
                         <div class="route__text">
@@ -1085,7 +1211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4">
                     <div class="route__item">
                         <div class="route__title">Из Южного города</div>
                         <div class="route__text">
@@ -1093,7 +1219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4">
                     <div class="route__item">
                         <div class="route__title">Из Тольятти</div>
                         <div class="route__text">
@@ -1102,7 +1228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4">
                     <div class="route__item">
                         <div class="route__title">Из Сызрани</div>
                         <div class="route__text">
@@ -1149,10 +1275,10 @@
                     <p class="copyright">&copy; 2021 «Волжские термы»</p>
 
                         <a href="">Политика обработки персональных данных</a>
-                        <a href="">Правила посещения центра</a>
+                        <a href="#rules">Правила посещения центра</a>
 
 
-                    <p>Создание сайта — <a href="">Seo Простор</a></p>
+                    <p>Создание сайта — <a href="https://seoprostor.ru/">Seo Простор</a></p>
                     <div class="icon icon_white d-flex align-items-start">
                         <div class="icon__item icon__item_white">
                             <a href="https://www.instagram.com/" class="icon__inner">
@@ -1174,6 +1300,25 @@
             </div>
         </footer>
 
+        <div style="display: none;">
+            <form class="form form-request" action="#" id="request">
+                <div class="form__wrapper">
+                    <h3 class="title title_small form__title">Заявка на индивидуальное <br> обслуживание групп</h3>
+                        <div class="form__inputs d-flex">
+                            <div class="form__item">
+                                <label for="phone">Номер телефона</label>
+                                <input type="text" class="form__input" placeholder="+7 (___) __-____" id="phone">
+                            </div>
+                            <div class="form__item">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" class="form__input" placeholder="Ваше имя" id="name">
+                            </div>
+                        </div>
+                        <p class="form__text">Нажимая на кнопку вы даёте согласие на обработку и хранение персональных данных <br> и принимаете правила посещения Центра.</p>
+                        <button class="form__btn btn btn-big">Отправить</button>
+                </div>
+            </form>
+       </div>
     </body>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="js/libs.min.js"></script>

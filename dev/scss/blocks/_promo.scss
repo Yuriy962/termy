@@ -1,5 +1,6 @@
 .promo{
     color: #fff;
+    margin-top: 107px;
     &__shadow{
         position: absolute;
         left: 0;
@@ -67,7 +68,6 @@
         position: absolute;
         z-index: 1;
         height: 93px;
-        width: 316px;
         bottom: 0;
         width: 100%;
     }
@@ -76,6 +76,27 @@
 
     }
 }
+@media (max-width: 1200px){
+    .promo{
+        &__title{
+            font-size: 60px;
+            line-height: 68px;
+            margin: 30px 0;
+        }
+        &__subtitle{
+            margin: 30px 0;
+        }
+        &__mark{
+            top: 35%;
+            left: 60%;
+        }
+        &__item{
+            height: 668px;
+        }
+    }
+}
+
+
 
 .img{
     &-bg{
@@ -126,4 +147,9 @@
     position: relative;
     max-width: 316px;
     bottom: -25px;
+}
+@media (max-width: 1250px){
+    .scrollbar{
+        left: 30px;
+    }
 }

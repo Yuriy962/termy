@@ -3,6 +3,9 @@
     padding: 90px 0;
     position: relative;
     overflow: hidden;
+    &__title{
+        margin-top: 0;
+    }
 }
 
 .booking{
@@ -26,6 +29,11 @@
     }
     .link{
         text-decoration: underline;
+    }
+    .dropdown{
+        .booking-drop.dropdown__content{
+            top: 110px;
+        }
     }
 }
 
@@ -52,10 +60,68 @@
         align-items: center;
         transition: all 0.5s;
     }
+    &__content{
+        position: absolute;
+        background-color: #FFFFFF;
+        opacity: 0;
+        transform: translateY(-300px);
+        transition: 0.2s all;
+        z-index: -10;
+    }
+    &__item{
+        margin-bottom: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__inner{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            display: block;
+            border-bottom: 16px solid #fff;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            top: -36px;
+            left: 18px;
+        }
+    }
     &_active{
         &::after{
             transform: translateY(-50%) rotate(180deg);
         }
+
+        .dropdown__content{
+            z-index: 10;
+            width: 100%;
+            top: 70px;
+            left: -8px;
+            display: block;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(175, 206, 203, 0.5);
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 7px;
+    &__btn{
+        padding: 10px 15px;
+    }
+    &__quantity{
+        font-size: 17px;
     }
 }
 
@@ -111,9 +177,49 @@
             border-radius: 0 10px 10px 0;
         }
     }
+    &-drop{
+        &.dropdown__content{
+            padding: 0;
+            left: 0;
+        }
+        &__item{
+            padding: 10px 17px;
+            &:hover,
+            &-active{
+                background-color: #A8F0E8;
+            }
+        }
+    }
 }
-@media (max-width: 0){
-
+@media (max-width: 1400px){
+    .visit{
+        &__item{
+            &_left{
+                padding: 27px 23px 18px;
+            }
+        }
+    }
+}
+@media (max-width: 1300px){
+    .visit{
+        &__item{
+            &_right{
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+@media (max-width: 1200px){
+    .visit{
+        &__pie{
+            margin-top: 30px;
+        }
+        &__item{
+            &_right{
+                flex: 0 0 50%;
+            }
+        }
+    }
 }
 
 .deliverydesk{

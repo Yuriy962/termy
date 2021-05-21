@@ -33,6 +33,11 @@
             color: $accent;
         }
     }
+    &-indrop{
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
 }
 .buy{
     font-size: 13px;
@@ -45,7 +50,10 @@
         font-size: 13px;
         padding: 5px 10px;
         &-big{
-            padding: 25px 48px;
+            padding: 17px 48px;
+        }
+        &-sectional{
+            margin-bottom: 0px;
         }
     }
 }

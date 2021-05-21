@@ -14,14 +14,27 @@
         padding: 50px 0;
     }
 }
+@media (max-width: 1200px){
+    .events{
+        &__inner{
+            padding: 50px 0;
+        }
+    }
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 @media (max-width: 1270px){
     .event{
+        min-height: 262px;
         &__name{
             min-height: 84px;
         }
     }
 }
-
 .calendar{
     margin-top: 50px;
     max-width: 433px;
@@ -115,6 +128,17 @@
         }
         &-right{
             right: -63px;
+        }
+    }
+}
+
+.calendar{
+    &__arrow{
+        &:hover{
+            background-color: #0DB2A2;
+            &::after{
+                color: #fff;
+            }
         }
     }
 }
