@@ -1,23 +1,23 @@
 
-/* window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
+window.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.header__sidebar'),
     //menuList = document.querySelector('.menu__list'),
     menuItem = document.querySelectorAll('.menu__item'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger-active');
-        menu.classList.toggle('menu-active');
+        hamburger.classList.toggle('hamburger_active');
+        sidebar.classList.toggle('header__sidebar_active');
         //menuList.classList.toggle('container');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger-active');
-            menu.classList.toggle('menu-active');
+            hamburger.classList.toggle('hamburger_active');
+            sidebar.classList.toggle('header__sidebar_active');
         })
     });
-}); */
+});
 
 $(document).ready(function () {
     $().fancybox();
@@ -34,31 +34,45 @@ $(document).ready(function () {
     }
 
     var swiper = new Swiper(".promo__swiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar"/* ,
-            renderFraction: (currentClass, totalClass) => {
-                return '<span class="current-number' + currentClass + '"></span>' +
-                  ' of ' +
-                  '<span class="total-number ' + totalClass + '"></span>';
-            } */
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        on: {
-            init: function (swiper) {
-                console.log(swiper.activeIndex);
-                console.log(addZero(swiper.slides.length));// общее кол-во слайдов
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            slideChange: function (swiper) {
-                console.log(addZero(swiper.activeIndex + 1));
-            }
-        },
-    });
+            on: {
+                init: function (swiper) {
+                    console.log(swiper.slides.length);
+                    console.log(swiper.activeIndex);
+                    console.log(addZero(swiper.slides.length));// общее кол-во слайдов
+                },
+                slideChange: function (swiper) {
+                    console.log(addZero(swiper.activeIndex + 1));
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination"
+            },
+            breakpoints:  {
+                768:{
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar",
+                        renderFraction: function (currentClass, totalClass) {
+                            return '<span class="' + currentClass + '"></span>' +
+                                    ' of ' +
+                                    '<span class="' + totalClass + '"></span>';
+                        }
+                    },
+                },
+                320: {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "bullets",
+                    }
+                },
+            },
+        });
 
-    var servswiper = new Swiper(".additional__sliders_slider", {
+    var servswiper = new Swiper(".services__photos", {
         slidesPerView: 1,
         spaceBetween: 100,
         navigation: {
@@ -110,8 +124,14 @@ $(document).ready(function () {
     $('.calendar__day').on('click', function () {
         $(this).toggleClass('calendar__day_active'); 
      });
-     $('.basket.icon').on('click', function () {
+     $('.basket.icon').on('click', function (e) {
+        e.preventDefault();
         $(this).find('.basket__content').toggleClass('basket__content_active'); 
+        $('.page-overflow').toggleClass('page-overflow_active');
+     });
+     $('.page-overflow').on('click', function(){
+        $(this).toggleClass('page-overflow_active');
+        $('.basket__content').toggleClass('basket__content_active'); 
      });
 
         //Табы
@@ -120,6 +140,8 @@ $(document).ready(function () {
             .addClass('tabs__item_active').siblings().removeClass('tabs__item_active')
             .closest('div.container').find('div.tabs__content').removeClass('tabs__content_active').eq($(this).index()).addClass('tabs__content_active');
     });
+
+
 
     $().fancybox();
 

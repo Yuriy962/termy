@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="css/all.min.css">
     </head>
     <body>
-
+        <div class="page-overflow"></div>
         <header class="header position-relative">
             <div class="header__inner position-fixed">
-                <div class="header__block header__block_left position-absolute left"></div>
-                <div class="header__block header__block_right position-absolute right"></div>
-                <div class="container position-relative z-index-1 d-lg-flex justify-content-lg-between">
+                    <div class="header__block header__block_left position-absolute left"></div>
+                    <div class="header__block header__block_right position-absolute right"></div>
+                    <div class="container header-desktop position-relative z-index-1 d-lg-flex d-none justify-content-lg-between">
                     <div class="header__left">
                         <div class="header__top d-flex">
                             <div class="icon d-flex align-items-start">
@@ -95,10 +95,101 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="header-mobile position-relative z-index-1 d-lg-none d-block">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <div class="logo__inner">
+                                    <img src="icons/logo.svg" alt="Логотип">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between justify-content-sm-end header__icons">
+                                <a href="tel:+79272072443" class="phone header__icons_item">
+                                    <img src="icons/mobile/phone-mobile.svg" alt="">
+                                </a>
+                                <div class="icon basket header__icons_item">
+                                    <div class="icon__item">
+                                        <div class="icon__inner">
+                                            <img src="icons/mobile/basket-mobile.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="basket__content">
+                                        <div class="basket__inner">
+                                            <div class="basket__list">
+                                                <div class="basket__item">
+                                                    <div class="basket__title">Взрослый</div>
+                                                    <p class="basket__price">900 руб.</p>
+                                                </div>
+                                                <div class="basket__item">
+                                                    <div class="basket__title">Детский 7-14 лет</div>
+                                                    <p class="basket__price">750 руб.</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__btns d-flex justify-content-between">
+                                                <a href="" class="btn btn-transparent">Оформить заказ</a>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket__count">2</div>
+                                </div>
+                                <div class="hamburger header__icons_item">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__sidebar">
+                            <div class="container">
+                                <nav class="menu">
+                                    <ul>
+                                        <li><a href="#greeting">Познакомимся</a></li>
+                                        <li><a href="#schema">Путешествие</a></li>
+                                        <li><a href="#wellness">Услуги</a></li>
+                                        <li><a href="#additional">Дополнительные услуги</a></li>
+                                        <li><a href="#events">мероприятия</a></li>
+                                        <li><a href="#rules">ПРАВИЛА ПОСЕЩЕНИЯ</a></li>
+                                        <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                                        <li><a href="#route">КАК ДОБРАТЬСЯ</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="d-flex  justify-content-center mb-4">
+                                    <a href="tel:79272072443" class="phone header__sidebar-item ">+7 927 207 24 43 </a>
+                                    <div class="header__sidebar-item icon icon_white d-flex align-items-start">
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://www.instagram.com/" class="icon__inner">
+                                                <img src="icons/inst-green.svg">
+                                            </a>
+                                        </div>
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://www.facebook.com/" class="icon__inner">
+                                                <img src="icons/fb-green.svg">
+                                            </a>
+                                        </div>
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://vk.com/" class="icon__inner">
+                                                <img src="icons/vk-green.svg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav class="menu">
+                                    <ul>
+                                        <li><a href="#birthday" class="header__link underlined">Детский день рождения</a></li>
+                                        <li><a href="#groups" class="header__link underlined">Обслуживание групп</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Mobile menu -->
+
+            <!-- header mobile -->
         </header>
 
         <main>

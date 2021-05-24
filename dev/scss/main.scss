@@ -35,6 +35,32 @@ body.compensate-for-scrollbar {
 body.compensate-for-scrollbar {
     margin-right: 0px;
 }
+
+.page-overflow{
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	cursor: pointer;
+	&_active{
+		display: block;
+	}
+}
+
+input{
+	&:focus{
+		outline: none;
+	}
+}
+button{
+	&:focus{
+		outline: none;
+	}
+}
+
 /*end fancybox*/
 @import 'fonts';
 @import 'colors';

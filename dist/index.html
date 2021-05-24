@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="css/all.min.css">
     </head>
     <body>
-
+        <div class="page-overflow"></div>
         <header class="header position-relative">
             <div class="header__inner position-fixed">
-                <div class="header__block header__block_left position-absolute left"></div>
-                <div class="header__block header__block_right position-absolute right"></div>
-                <div class="container position-relative z-index-1 d-lg-flex justify-content-lg-between">
+                    <div class="header__block header__block_left position-absolute left"></div>
+                    <div class="header__block header__block_right position-absolute right"></div>
+                    <div class="container header-desktop position-relative z-index-1 d-lg-flex d-none justify-content-lg-between">
                     <div class="header__left">
                         <div class="header__top d-flex">
                             <div class="icon d-flex align-items-start">
@@ -95,16 +95,107 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="header-mobile position-relative z-index-1 d-lg-none d-block">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <div class="logo__inner">
+                                    <img src="icons/logo.svg" alt="Логотип">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between justify-content-sm-end header__icons">
+                                <a href="tel:+79272072443" class="phone header__icons_item">
+                                    <img src="icons/mobile/phone-mobile.svg" alt="">
+                                </a>
+                                <div class="icon basket header__icons_item">
+                                    <div class="icon__item">
+                                        <div class="icon__inner">
+                                            <img src="icons/mobile/basket-mobile.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="basket__content">
+                                        <div class="basket__inner">
+                                            <div class="basket__list">
+                                                <div class="basket__item">
+                                                    <div class="basket__title">Взрослый</div>
+                                                    <p class="basket__price">900 руб.</p>
+                                                </div>
+                                                <div class="basket__item">
+                                                    <div class="basket__title">Детский 7-14 лет</div>
+                                                    <p class="basket__price">750 руб.</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__btns d-flex justify-content-between">
+                                                <a href="" class="btn btn-transparent">Оформить заказ</a>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket__count">2</div>
+                                </div>
+                                <div class="hamburger header__icons_item">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__sidebar">
+                            <div class="container">
+                                <nav class="menu">
+                                    <ul>
+                                        <li><a href="#greeting">Познакомимся</a></li>
+                                        <li><a href="#schema">Путешествие</a></li>
+                                        <li><a href="#wellness">Услуги</a></li>
+                                        <li><a href="#additional">Дополнительные услуги</a></li>
+                                        <li><a href="#events">мероприятия</a></li>
+                                        <li><a href="#rules">ПРАВИЛА ПОСЕЩЕНИЯ</a></li>
+                                        <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                                        <li><a href="#route">КАК ДОБРАТЬСЯ</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="d-flex  justify-content-center mb-4">
+                                    <a href="tel:79272072443" class="phone header__sidebar-item ">+7 927 207 24 43 </a>
+                                    <div class="header__sidebar-item icon icon_white d-flex align-items-start">
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://www.instagram.com/" class="icon__inner">
+                                                <img src="icons/inst-green.svg">
+                                            </a>
+                                        </div>
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://www.facebook.com/" class="icon__inner">
+                                                <img src="icons/fb-green.svg">
+                                            </a>
+                                        </div>
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://vk.com/" class="icon__inner">
+                                                <img src="icons/vk-green.svg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav class="menu">
+                                    <ul>
+                                        <li><a href="#birthday" class="header__link underlined">Детский день рождения</a></li>
+                                        <li><a href="#groups" class="header__link underlined">Обслуживание групп</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Mobile menu -->
+
+            <!-- header mobile -->
         </header>
 
         <main>
 
 
-<section class="promo">
+<section class="promo" id="promo">
     <div class="swiper-container promo__swiper position-relative">
         <div class="swiper-wrapper">
             <div class="swiper-slide promo__item" style="background:url('img/promo/woman.jpg') center/cover no-repeat;">
@@ -747,20 +838,35 @@
             4
         </div>
 
-       <div class="additional__sliders_row row">
-           <div class="additional__sliders_col col-lg-6">
-            <div class="additional__sliders_slider swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide service-slide__item" id="birthday">
-                      <div class="service-slide__header">
-                          <img src="img/additional/slider/birthday.jpg" alt="">
-                      </div>
-                      <div class="service-slide__footer">
-                        <h3 class="title_small service-slide__title">Хотите необычный праздник 
+        <div class="row services">
+            <div class="col-lg-6">
+                <div class="services__item" id="birthday">
+                    <div class="services__header">
+                        <div class="services__photos swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                  <img src="img/additional/slider/birthday.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="img/additional/slider/birthday.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="img/additional/slider/birthday.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>                      
+                    </div>
+                    <div class="services__footer">
+                        <h3 class="title_small services__title">Хотите необычный праздник 
                             в детский день рождения?</h3>
-                        <div class="d-flex justify-content-between service-slide__icons ">
-                            <div class="service-slide__icons-item d-flex">
-                                <div class="service-slide__icons-img">
+                        <div class="d-flex justify-content-between services__icons">
+                            <div class="services__item d-flex">
+                                <div class="services__icons-img">
                                     <img src="icons/clock.svg" alt="">
                                 </div>
                                 <p class="text color-white">
@@ -768,8 +874,8 @@
                                     2 часа
                                 </p>
                             </div>
-                            <div class="service-slide__icons-item d-flex">
-                                <div class="service-slide__icons-img">
+                            <div class="services__item d-flex">
+                                <div class="services__icons-img">
                                     <img src="icons/wallet.svg" alt="">
                                 </div>
                                 <p class="text color-white">
@@ -777,75 +883,51 @@
                                 </p>
                             </div>
                         </div>
-                        <p class="service-slide__text color-text">Оплата включает входной билет. Минимальное количество участников 10. Игры с аниматором, морской квест, питание НЕ входит в стоимость, заказывается  индивидуально по меню нашего фудкорта.</p>
+                        <p class="services__text color-text">Оплата включает входной билет. Минимальное количество участников 10. Игры с аниматором, морской квест, питание НЕ входит в стоимость, заказывается  индивидуально по меню нашего фудкорта.</p>
                         <div class="text-left">
-                            <a href="#request" data-fancybox class="btn btn-big">Оставить заявку</a>
+                            <a href="#request" data-fancybox="" class="btn btn-big">Оставить заявку</a>
                         </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide service-slide__item" id="groups">
-                    <div class="service-slide__header">
-                        <img src="img/additional/slider/groups.jpg" alt="">
-                    </div>
-                    <div class="service-slide__footer">
-                      <h3 class="title_small service-slide__title">Индивидуальное 
-                          обслуживание групп</h3>
-                      <div class="d-flex justify-content-between service-slide__icons ">
-                          <div class="service-slide__icons-item d-flex">
-                              <div class="service-slide__icons-img">
-                                  <img src="icons/wallet.svg" alt="">
-                              </div>
-                              <p class="text color-white">
-                                  Стоимость посещения  <br>
-                                  в выходной день: 1 400 руб.
-                              </p>
-                          </div>
-                          <div class="service-slide__icons-item d-flex">
-                              <div class="service-slide__icons-img">
-                                  
-                              </div>
-                              <p class="text color-white">
-                                  Стоимость посещения <br>
-                                  в будний день: 900 руб.
-                              </p>
-                          </div>
-                      </div>
-                      <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
-                      <div class="text-left">
-                          <a href="#request" data-fancybox class="btn btn-big">Оставить заявку</a>
-                      </div>
                     </div>
                 </div>
-                </div>
-
-                <div class="swiper-button-prev white__arrow white__arrow-left"></div>
-                <div class="swiper-button-next white__arrow white__arrow-right"></div>
-                <div class="swiper-pagination"></div>
-              </div>
-           </div>
-           <div class="additional__sliders_col col-lg-6">
-            <div class="additional__sliders_slider swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide service-slide__item">
-                      <div class="service-slide__header">
-                          <img src="img/additional/slider/groups.jpg" alt="">
-                      </div>
-                      <div class="service-slide__footer">
-                        <h3 class="title_small service-slide__title">Индивидуальное 
+            </div>
+            <div class="col-lg-6">
+                <div class="services__item" id="groups">
+                    <div class="services__header">
+                        <div class="services__photos swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                  <img src="img/additional/slider/groups.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="img/additional/slider/groups.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="img/additional/slider/groups.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>                      
+                    </div>
+                    <div class="services__footer">
+                        <h3 class="title_small services__title">Индивидуальное 
                             обслуживание групп</h3>
-                        <div class="d-flex justify-content-between service-slide__icons ">
-                            <div class="service-slide__icons-item d-flex">
-                                <div class="service-slide__icons-img">
+                        <div class="d-flex justify-content-between services__icons">
+                            <div class="services__item d-flex">
+                                <div class="services__icons-img">
                                     <img src="icons/wallet.svg" alt="">
                                 </div>
                                 <p class="text color-white">
-                                    Стоимость посещения  <br>
+                                    Стоимость посещения <br>
                                     в выходной день: 1 400 руб.
                                 </p>
                             </div>
-                            <div class="service-slide__icons-item d-flex">
-                                <div class="service-slide__icons-img">
-                                    
+                            <div class="services__item d-flex">
+                                <div class="services__icons-img">
+                                   
                                 </div>
                                 <p class="text color-white">
                                     Стоимость посещения <br>
@@ -853,53 +935,14 @@
                                 </p>
                             </div>
                         </div>
-                        <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
+                        <p class="services__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет.</p>
                         <div class="text-left">
-                            <a href="#request" data-fancybox="request" class="btn btn-big">Оставить заявку</a>
+                            <a href="#request" data-fancybox="" class="btn btn-big">Оставить заявку</a>
                         </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide service-slide__item">
-                      <div class="service-slide__header">
-                          <img src="img/additional/slider/birthday.jpg" alt="">
-                      </div>
-                      <div class="service-slide__footer">
-                        <h3 class="title_small service-slide__title">Индивидуальное 
-                            обслуживание групп</h3>
-                        <div class="d-flex justify-content-between service-slide__icons ">
-                            <div class="service-slide__icons-item d-flex">
-                                <div class="service-slide__icons-img">
-                                    <img src="icons/wallet.svg" alt="">
-                                </div>
-                                <p class="text color-white">
-                                    Стоимость посещения  <br>
-                                    в выходной день: 1 400 руб.
-                                </p>
-                            </div>
-                            <div class="service-slide__icons-item d-flex">
-                                <div class="service-slide__icons-img">
-                                    
-                                </div>
-                                <p class="text color-white">
-                                    Стоимость посещения <br>
-                                    в будний день: 900 руб.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="service-slide__text color-text">Минимальное количество участников 20, при покупке безлимитного посещения. Вы можете заполнить заявку на групповой билет</p>
-                        <div class="text-left">
-                            <a href="#request" data-fancybox class="btn btn-big">Оставить заявку</a>
-                        </div>
-                      </div>
-                  </div>
+                    </div>
                 </div>
-
-                <div class="swiper-button-prev white__arrow white__arrow-left"></div>
-                <div class="swiper-button-next white__arrow white__arrow-right"></div>
-                <div class="swiper-pagination"></div>
-              </div>
-           </div>
-       </div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="gift" id="gift">
@@ -1267,11 +1310,11 @@
         <footer class="footer">
             <div class="footer__inner">
                 <div class="container position-relative d-lg-flex justify-content-lg-between align-items-center">
-                    <div class="logo logo_footer position-relative">
+                    <a href="#promo" class="logo logo_footer position-relative">
                         <div class="logo__inner">
                             <img src="icons/logo-footer.svg" alt="">
                         </div>
-                    </div>
+                    </a>
                     <p class="copyright">&copy; 2021 «Волжские термы»</p>
 
                         <a href="">Политика обработки персональных данных</a>
