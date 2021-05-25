@@ -34,42 +34,44 @@ $(document).ready(function () {
     }
 
     var swiper = new Swiper(".promo__swiper", {
+            observer: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             on: {
                 init: function (swiper) {
-                    console.log(swiper.slides.length);
-                    console.log(swiper.activeIndex);
-                    console.log(addZero(swiper.slides.length));// общее кол-во слайдов
+                    $('.promo__scrollbar').before('<div class="promo__slides-counter"><span>' 
+                    + addZero(swiper.activeIndex+1) + '</span>' +
+                    ' / ' +
+                    '<span>' + addZero(swiper.slides.length) + '</span></div>');
                 },
                 slideChange: function (swiper) {
-                    console.log(addZero(swiper.activeIndex + 1));
+                    $('.promo__slides-counter span:first-child').text(addZero(swiper.activeIndex+1));
                 }
             },
-            pagination: {
-                el: ".swiper-pagination"
-            },
             breakpoints:  {
-                768:{
-                    pagination: {
-                        el: ".swiper-pagination",
-                        type: "progressbar",
-                        renderFraction: function (currentClass, totalClass) {
-                            return '<span class="' + currentClass + '"></span>' +
-                                    ' of ' +
-                                    '<span class="' + totalClass + '"></span>';
-                        }
-                    },
-                },
                 320: {
                     pagination: {
                         el: ".swiper-pagination",
                         type: "bullets",
                     }
                 },
+                480:{
+                    pagination: {
+
+                    }
+                },
+                767:{
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar"
+                    },
+                }
             },
+        });
+        $(swiper).on('paginationShow',function () {
+            console.log('ds');
         });
 
     var servswiper = new Swiper(".services__photos", {

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Волжские термы</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/all.min.css">
     </head>
@@ -55,7 +56,7 @@
                     <div class="header__right">
                         <div class="header__top d-flex">
                             <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
-                            <a class="buy" href="https://sell.miratermy.ru/eticket/">Купить</a>
+                            <a class="buy" href="https://sell.miratermy.ru/eticket/" target="_blank">Купить</a>
                             <a href="#ticket" class="btn">Билет</ф>
                             <a href="#gift" class="btn">Сертификат</a>
                             <div class="icon basket">
@@ -96,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="header-mobile position-relative z-index-1 d-lg-none d-block">
+                <div class="header-mobile position-relative d-lg-none d-block">
                     <div class="container">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="logo">
@@ -186,8 +187,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
 
             <!-- header mobile -->
         </header>
@@ -278,9 +277,9 @@
 </section>
 <section class="greeting" id="greeting">
     <div class="container">
-        <h2 class="title">Познакомимся</h2>
-        <div class="row">
-            <div class="col-lg-4">                
+        <h2 class="title greeting__top-title">Познакомимся</h2>
+        <div class="row greeting__list">
+            <div class="col-lg-4 col-md-8 col-sm-8 col-10">                
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
@@ -296,7 +295,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4">                
+            <div class="col-lg-4 col-md-8 col-sm-8 col-10">                
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
@@ -313,7 +312,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4">                
+            <div class="col-lg-4 col-md-8 col-sm-8 col-10">                
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
@@ -330,7 +329,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4">                
+            <div class="col-lg-4 col-md-8 col-sm-8 col-10">                
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
@@ -347,7 +346,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4">                
+            <div class="col-lg-4 col-md-8 col-sm-8 col-10">                
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
@@ -364,7 +363,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4">                
+            <div class="col-lg-4 col-md-8 col-sm-8 col-10">                
                 <a class="greeting__item ">
                     <div class="greeting__inner">
                         <div class="greeting__shadow"></div>
@@ -383,7 +382,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="" class="btn btn-big btn-sectional">Купить билет</a>
+            <a href="" class="btn btn-big greeting__btn btn-sectional">Купить билет</a>
         </div>
         </div>
     </div>
@@ -417,7 +416,11 @@
             srcset="img/schema/schema-280.png" media="(max-width: 540px)">
             <img src="img/schema/schema-large.png, img/schema/schema-900.png, img/schema/schema-700.png, img/schema/schema-540.png, img/schema/schema-280.png" alt="Схема" class="position-relative">
         </picture>
-        <div class="text-center">
+        <div class="text-center d-none d-md-block">
+            <a class="btn btn-big btn-sectional">путешествие 3D</a>
+        </div>
+        <div class="text-center d-sm-flex d-md-none flex-column align-items-center">
+            <a class="btn btn-big btn-sectional mt-0">Смотреть схему</a>
             <a class="btn btn-big btn-sectional">путешествие 3D</a>
         </div>
     </div>
@@ -428,7 +431,7 @@
         top: 14.895%;
         transform: rotate(4.07deg);
     ">
-    <img  src="img/ticket/seashell.svg" class="img-underbg" alt="" style="
+    <img  src="img/ticket/seashell.svg" class="img-underbg seashell" alt="" style="
         left: 6.458%;
         top: 42.557%;
         transform: rotate(-3.34deg);
@@ -440,7 +443,7 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-6">
                     <div class="booking__item dropdown">
-                        <div class="booking__title">Выбрать длительность посещения </div>
+                        <div class="booking__title">Длительность посещения </div>
                         <p class="text">2,5 часа</p>
                         <div class="booking-drop dropdown__content">
                             <div class="dropdown__inner">
@@ -501,7 +504,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="booking__item dropdown">
-                        <div class="booking__title">Выбрать время входа</div>
+                        <div class="booking__title">Время входа</div>
                         <p class="text">с 10.00 до 16.00</p>
                         <div class="booking-drop dropdown__content">
                             <div class="dropdown__inner">
@@ -562,7 +565,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="booking__item dropdown">
-                        <div class="booking__title">Выбрать категорию билета</div>
+                        <div class="booking__title">Категория билета</div>
                         <p class="text">Взрослый</p>
                         <div class="booking-drop dropdown__content">
                             <div class="dropdown__inner">
@@ -629,7 +632,7 @@
             </div>
             <p class="text-center position-relative mt-3">Нажимая, вы даёте разрешение на обработку персональных данных и соглашаетесь с <a href="" class="link">правилами посещения в центр</a></p>
             <div class="text-center">
-                <a href="" class="btn btn-big">Купить билет</a>
+                <a href="" class="btn btn-big position-relative z-index-1">Купить билет</a>
             </div>
         </div>
     </section>
@@ -638,7 +641,7 @@
             <div class="row visit__list">
                 <div class="col-xl-6 col-lg-12">
                     <div class="visit__item">
-                        <h3 class="title title_small mt-0 text-left">Стоимость посещения различается</h3>
+                        <h3 class="title title_small visit__title text-left">Стоимость посещения различается</h3>
                         <p>
                             <ul>
                                 <li>в выходные, праздничные и будние дни</li>
@@ -683,12 +686,14 @@
                                 </div>
                             </div>
                             <div class="graphic">
-                                <img src="img/ticket/graphic.svg" alt="">
+                                <img src="img/ticket/graphic.svg" alt="graphic">
                             </div>
                         </div>
                         <div class="visit__item_right">
-                            <img src="img/ticket/gift.svg" alt="">
-                            <h3 class="text visit__item_title">30 минут в подарок!</h3>
+                            <div class="visit__top d-flex">
+                                <img src="img/ticket/gift.svg" alt="gift" class="visit__img">
+                                <h3 class="text visit__item_title">30 минут в подарок!</h3>
+                            </div>
                             <p class="visit__item_text">Покупая билет, вы оплачиваете тариф на свой выбор и получаете 30 минут в подарок на переодевание</p>
                         </div>
                     </div>
@@ -764,7 +769,7 @@
     </div>
 </section>
 <section class="additional" id="additional">
-    <img src="img/additional/turtle.png" class="img-underbg" alt="" style="
+    <img src="img/additional/turtle.png" class="img-underbg turtle" alt="" style="
     left: 5.88%;
     top: 28.75%;
     ">
@@ -857,15 +862,15 @@
                               </div>
                             </div>
                             <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev white__arrow"></div>
+                            <div class="swiper-button-next white__arrow"></div>
                           </div>                      
                     </div>
                     <div class="services__footer">
                         <h3 class="title_small services__title">Хотите необычный праздник 
                             в детский день рождения?</h3>
                         <div class="d-flex justify-content-between services__icons">
-                            <div class="services__item d-flex">
+                            <div class="d-flex services__icons-item">
                                 <div class="services__icons-img">
                                     <img src="icons/clock.svg" alt="">
                                 </div>
@@ -874,7 +879,7 @@
                                     2 часа
                                 </p>
                             </div>
-                            <div class="services__item d-flex">
+                            <div class="d-flex services__icons-item">
                                 <div class="services__icons-img">
                                     <img src="icons/wallet.svg" alt="">
                                 </div>
@@ -908,15 +913,15 @@
                               </div>
                             </div>
                             <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev white__arrow"></div>
+                            <div class="swiper-button-next white__arrow"></div>
                           </div>                      
                     </div>
                     <div class="services__footer">
                         <h3 class="title_small services__title">Индивидуальное 
                             обслуживание групп</h3>
                         <div class="d-flex justify-content-between services__icons">
-                            <div class="services__item d-flex">
+                            <div class="d-flex services__icons-item">
                                 <div class="services__icons-img">
                                     <img src="icons/wallet.svg" alt="">
                                 </div>
@@ -925,7 +930,7 @@
                                     в выходной день: 1 400 руб.
                                 </p>
                             </div>
-                            <div class="services__item d-flex">
+                            <div class="d-flex services__icons-item">
                                 <div class="services__icons-img">
                                    
                                 </div>
@@ -1003,7 +1008,7 @@
 </section>
 <section class="events position-relative" id="events">
     <div class="events__inner">
-        <img src="/img/events/pail.png" class="img-underbg" alt="" style="
+        <img src="img/events/pail.png" class="img-underbg" alt="" style="
         mix-blend-mode: multiply;
         left: 22.08%;
         top: 25.15%;
@@ -1235,7 +1240,7 @@
         transform: translateX(-50%);
         ">
         <img src="img/route/bus.svg" class="img-underbg" alt="" style="
-        bottom: 1.675%;
+        bottom: 4.675%;
         left: 38.25%;
         ">
         <img src="img/route/seashell-second.svg" class="img-underbg" alt="" style="

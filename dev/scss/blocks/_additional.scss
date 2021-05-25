@@ -8,7 +8,7 @@
 }
 
 .white__arrow{
-    top: 20%;
+    top: 50%;
     border: 1px solid #FFFFFF;
     border-radius: 100%;
     width: 40px;
@@ -101,6 +101,23 @@
 
     /*слайдер*/
 }
+@media (max-width: 992px){
+    .service{
+        flex-direction: column;
+    }
+    .turtle{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .service{
+        flex-direction: column-reverse;
+        &__img{
+            margin-right: 0;
+            margin-top: 1.5em;
+        }
+    }
+}
 
 .services{
     margin-top: 100px;           
@@ -173,6 +190,73 @@
         }
         &__text{
             min-height: 97px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .services{
+        &__title{
+            min-height: 80px;
+        }
+        &__item{
+            margin-bottom: 60px;
+        }
+        &__footer{
+            padding: 0 40px 30px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .service{
+        font-size: 15px;
+    }
+    .services{
+        &__icons{
+            margin: 25px 0 0;
+            flex-direction: column;
+            &-item{
+                margin-bottom: 18px;
+            }
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__title{
+            font-size: 23px;
+            line-height: 30px;
+            min-height: 50px;
+            margin: 0;
+        }
+        &__footer{
+            padding: 0 20px 40px;
+            min-height: 400px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .service{
+        &__img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .services{
+        &__header{
+            height: 200px;
+        }
+        &__icons{
+            flex-direction: column;
+            &-item{
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .services{
+        &__header{
+            height: 180px;
         }
     }
 }

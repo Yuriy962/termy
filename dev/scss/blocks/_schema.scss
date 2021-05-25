@@ -15,3 +15,14 @@
         margin-top: 0;
     }
 }
+@media (max-width: 767px){
+    .schema{
+        padding: 0px 0 30px;
+        &__title{
+            padding-top: 20px;
+        }
+        &__img{
+            margin-bottom: 20px;
+        }
+    }
+}

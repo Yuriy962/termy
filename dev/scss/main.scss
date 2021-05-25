@@ -43,7 +43,7 @@ body.compensate-for-scrollbar {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 1000;
+	z-index: 10;
 	cursor: pointer;
 	&_active{
 		display: block;
@@ -136,4 +136,10 @@ main{
 		top: 56.1499%;
 		transform: rotate(-8.34deg);
 	}
+}
+@media (max-width: 992px){
+	.branch{
+        left: 59.76%;
+        top: 59.1499%
+    }
 }
