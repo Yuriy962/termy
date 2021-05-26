@@ -125,10 +125,11 @@
         background-color: $slide-green;
         border-radius: 0px 0px 10px 10px;
         overflow: hidden;
+        margin-top: 60px;
     }
     &__header{
         width: 100%;
-        height: 295px;
+        height: 290px;
         img{
             width: 100%;
             height: 100%;
@@ -160,6 +161,9 @@
 }
 @media (max-width: 1300px){
     .services{
+        &__header{
+            height: 250px;
+        }
         &__icons-item{
             .text{
                 font-size: 16px;
@@ -182,7 +186,7 @@
     }
     .services{
         &__header{
-            height: 250px;
+            height: 200px;
         }
         &__title{
             line-height: 38px;
@@ -193,8 +197,18 @@
         }
     }
 }
+@media (max-width: 992px){
+    .services{
+        &__header{
+            height: 290px;
+        }
+    }
+}
 @media (max-width: 768px){
     .services{
+        &__header {
+            height: 260px;
+        }
         &__title{
             min-height: 80px;
         }
@@ -234,6 +248,9 @@
     }
 }
 @media (max-width: 480px){
+    .additional{
+        padding: 40px 0;
+    }    
     .service{
         &__img{
             img{
@@ -242,6 +259,9 @@
         }
     }
     .services{
+        &__item {
+            margin-bottom: 0px;
+        }
         &__header{
             height: 200px;
         }

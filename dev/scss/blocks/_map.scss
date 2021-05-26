@@ -19,6 +19,12 @@
         margin-bottom: 15px;
         display: block;
         font-size: 19px;
+        @media (max-width: 992px){
+            color: #000;
+            &:hover{
+                color: $accent;
+            }
+        }
     }
     &__header{
         padding: 10px 20px;

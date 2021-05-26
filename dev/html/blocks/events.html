@@ -1,22 +1,22 @@
 <section class="events position-relative" id="events">
     <div class="events__inner">
-        <img src="img/events/pail.png" class="img-underbg" alt="" style="
+        <img src="img/events/pail.png" class="img-underbg pail" alt="" style="
         mix-blend-mode: multiply;
         left: 22.08%;
         top: 25.15%;
         ">
-        <img src="img/events/fish.svg" class="img-underbg" alt="" style="
+        <img src="img/events/fish.svg" class="img-underbg fish" alt="" style="
         mix-blend-mode: multiply;
         right: 23.58%;
         top: 26.448%;
         ">
         <div class="container">
             <h2 class="title title-small title-sectional events__title">Календарь мероприятий</h2>
-            <p class="text-center text">Короткий информационный текст о проводимых мероприятиях. <br>
+            <p class="text-center text events__text">Короткий информационный текст о проводимых мероприятиях. <br>
                 Требуется ли дополнительная оплата за участие, предварительное бронирование.</p>
 
 
-            <div class="events__calendar calendar swiper-container">
+            <div class="events__calendar d-none d-md-block calendar swiper-container position-relative z-index-1">
                 <div class="swiper-button-prev calendar__arrow green__arrow green__arrow-left"></div>
                 <div class="swiper-button-next calendar__arrow green__arrow green__arrow-right"></div>
                 <div class="swiper-wrapper">
@@ -77,8 +77,11 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center d-block d-md-none position-relative mt-4">
+                <a href="" class="events__btn btn btn-big">Открыть календарь</a>
+            </div>
         </div>
-        <div class="container position-relative">
+        <div class="container position-relative d-none d-md-block">
             <div class="events__list swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper events__wrapper">
@@ -88,7 +91,7 @@
                     <div class="age">0+</div>
                     <div class="date">9 апреля</div>
                     <div class="event__name text">Практика парения с цитрусами</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Воскресенье 18.00</div>
@@ -96,28 +99,28 @@
                     <div class="date">12 апреля</div>
                     <div class="event__name text">Программа
                         “Дыши легко”</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Суббота 15.00</div>
                     <div class="age">7+</div>
                     <div class="date">18 апреля</div>
                     <div class="event__name text">Детский квест «Морские приключения»</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Понедельник 17.00</div>
                     <div class="age">0+</div>
                     <div class="date">20 апреля</div>
                     <div class="event__name text">Практика парения с цитрусами</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Четверг 15.00</div>
                     <div class="age">0+</div>
                     <div class="date">9 апреля</div>
                     <div class="event__name text">Практика парения с цитрусами</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Воскресенье 18.00</div>
@@ -125,26 +128,91 @@
                     <div class="date">12 апреля</div>
                     <div class="event__name text">Программа
                         “Дыши легко”</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Суббота 15.00</div>
                     <div class="age">7+</div>
                     <div class="date">18 апреля</div>
                     <div class="event__name text">Детский квест «Морские приключения»</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                   <div class="swiper-slide event">
                     <div class="time">Понедельник 17.00</div>
                     <div class="age">0+</div>
                     <div class="date">20 апреля</div>
                     <div class="event__name text">Практика парения с цитрусами</div>
-                    <a href="" class="btn btn-event">Подробнее</a>
+                    <a href="" class="btn btn-big btn-event">Подробнее</a>
                   </div>
                 </div>
             </div>
             <div class="swiper-button-prev green__arrow event__arrow event__arrow-left"></div>
             <div class="swiper-button-next green__arrow event__arrow event__arrow-right"></div>
+        </div>
+
+        <div class="container position-relative d-block d-md-none">
+            <!-- Additional required wrapper -->
+            <div class="events__list-mobile row flex-nowrap mt-5">
+                <!-- Slides -->
+                <div class="event">
+                <div class="time">Четверг 15.00</div>
+                <div class="age">0+</div>
+                <div class="date">9 апреля</div>
+                <div class="event__name text">Практика парения с цитрусами</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Воскресенье 18.00</div>
+                <div class="age">14+</div>
+                <div class="date">12 апреля</div>
+                <div class="event__name text">Программа
+                    “Дыши легко”</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Суббота 15.00</div>
+                <div class="age">7+</div>
+                <div class="date">18 апреля</div>
+                <div class="event__name text">Детский квест «Морские приключения»</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Понедельник 17.00</div>
+                <div class="age">0+</div>
+                <div class="date">20 апреля</div>
+                <div class="event__name text">Практика парения с цитрусами</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Четверг 15.00</div>
+                <div class="age">0+</div>
+                <div class="date">9 апреля</div>
+                <div class="event__name text">Практика парения с цитрусами</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Воскресенье 18.00</div>
+                <div class="age">14+</div>
+                <div class="date">12 апреля</div>
+                <div class="event__name text">Программа
+                    “Дыши легко”</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Суббота 15.00</div>
+                <div class="age">7+</div>
+                <div class="date">18 апреля</div>
+                <div class="event__name text">Детский квест «Морские приключения»</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+                <div class="event">
+                <div class="time">Понедельник 17.00</div>
+                <div class="age">0+</div>
+                <div class="date">20 апреля</div>
+                <div class="event__name text">Практика парения с цитрусами</div>
+                <a href="" class="btn btn-big btn-event">Подробнее</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
