@@ -42,3 +42,28 @@
         background-color: #CCE5E2;
     }
 }
+@media (max-width: 576px){
+    .map{
+        &__title{
+            font-size: 29px;
+            line-height: 35px;
+        }
+        &__footer{
+            padding: 20px;
+        }
+        &__contacts{
+            min-width: auto;
+            max-width: 280px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .phone{
+            font-size: 17px;
+        }
+        address{
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+}

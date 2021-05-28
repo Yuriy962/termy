@@ -103,10 +103,11 @@
     overflow: hidden;
 }
 .dp-content {
-    padding-left: 100px;
+    /* padding-left: 100px; */
     padding-right: 0;
     display: inline-block;
     width: 100%;
+    padding: 30px 40px;
 }
 .dp-content h2 {
     color: #41414B;
@@ -199,13 +200,19 @@
         padding: 0 50px;
     }
     .dp_item{
-        width: 70%;
+        width: 85%;
     }
     #dp-next {
-        right: 15%;
+        right: 3%;
     }
     #dp-prev {
-        left: -10px;
+        left: 0;
+    }
+    .dp_item[data-position="2"]{
+        transform: rotateY(0deg) translateX(8%) scale(.9);
+    }
+    .dp_item[data-position="3"] {
+        transform: rotateY(0deg) translateX(15%) scale(.8);
     }
 }
 @media (max-width: 1200px){

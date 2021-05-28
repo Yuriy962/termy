@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function () {
     $().fancybox();
-    $('a[href^="#"]:not(a[href="#request"])').on('click', function() {
+    $('a[href^="#"]:not(a[href="#request"]):not(a[href="#info"]):not(a[href="#adventures"]):not(a[href="#breathe"]):not(a[href="#levitation"])').on('click', function() {
         let href = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(href).offset().top
@@ -34,7 +34,6 @@ $(document).ready(function () {
     }
 
     var swiper = new Swiper(".promo__swiper", {
-            observer: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -71,7 +70,6 @@ $(document).ready(function () {
 
     var servswiper = new Swiper(".services__photos", {
         slidesPerView: 1,
-        spaceBetween: 100,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -83,11 +81,14 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        }
+        },
+        pagination: {
+            el: ".swiper-pagination.gift__pag",
+            type: "bullets"
+        },
     });
     var eventsSwiper = new Swiper(".events__list",
     {
-        observer: true,
         slidesPerView: 1,
         spaceBetween: 30,
         navigation: {
@@ -143,7 +144,6 @@ $(document).ready(function () {
 
 
     $().fancybox();
-
 
 /*-------------------<cardSlider>------------------------------------------------------*/
         function detect_active(){
