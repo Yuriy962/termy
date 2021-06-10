@@ -31,8 +31,25 @@
             <a class="btn btn-big btn-sectional">путешествие 3D</a>
         </div>
         <div class="text-center d-sm-flex d-md-none flex-column align-items-center">
-            <a class="btn btn-big btn-sectional mt-0">Смотреть схему</a>
+            <a href="#schema-img" data-fancybox="schema" class="btn btn-big btn-sectional mt-0 popup">Смотреть схему</a>
             <a class="btn btn-big btn-sectional">путешествие 3D</a>
         </div>
     </div>
 </section>
+<div style="display: none;" id="schema-img">
+    <picture class="schema__img">
+        <source 
+        srcset="img/schema/new/schema.jpg">
+        <source 
+        srcset="img/schema/new/schema-900.jpg" media="(max-width: 1360px)">
+        <source 
+        srcset="img/schema/new/schema-700.jpg" media="(max-width: 992px)">
+        <source 
+        srcset="img/schema/new/schema-700.jpg" media="(max-width: 992px)">
+        <source 
+        srcset="img/schema/new/schema-540.jpg" media="(max-width: 768px)">
+        <source 
+        srcset="img/schema/new/schema-280.jpg" media="(max-width: 540px)">
+        <img src="img/schema/schema-large.jpg, img/schema/schema-900.png, img/schema/schema-700.jpg, img/schema/schema-540.jpg, img/schema/schema-280.jpg" alt="Схема" class="position-relative">
+    </picture>
+</div>
