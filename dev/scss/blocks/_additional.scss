@@ -44,7 +44,7 @@
         margin-right: 30px;
         margin-bottom: 31px;
         text-align: center;
-        width: 316px;
+        width: 433px;
         height: 70px;
         border: 2px solid #0DB2A2;
         border-radius: 5px;
@@ -138,7 +138,7 @@
     &__footer{
         color: #fff;
         padding: 45px 40px;
-        min-height: 458px;
+        min-height: 476px;
     }
     &__title{
         line-height: 45px;
@@ -156,7 +156,12 @@
     }
     &__text{
         font-size: 17px;
-        min-height: 75px;
+        min-height: 100px;
+        padding-bottom: 15px;
+    }
+    a:not(.btn){
+        color: #FBFF28;
+        text-decoration: underline;
     }
 }
 @media (max-width: 1300px){

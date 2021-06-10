@@ -118,8 +118,7 @@
 .temperature{
     color: #000;
     background: rgba(255,255,255,0.5);
-    padding: 14px 25px 14px 16px;
-    width: 317px;
+    padding: 14px 16px;
     right: 0;
     border-radius: 3px;
     *{
@@ -139,8 +138,10 @@
         flex-basis: 45%;
         white-space: nowrap;
         text-align: center;
-        &:first-child{
-            border-right: 2px solid #17B8A8;
+        border-right: 2px solid #17B8A8;
+        padding: 0 10px;
+        &:last-child{
+            border-right: none;
         }
     }
 }
@@ -149,10 +150,12 @@
     position: relative;
     max-width: 316px;
     bottom: -25px;
+    left: 48px;
 }
 @media (max-width: 1250px){
     .scrollbar{
         left: 30px;
+        max-width: 260px;
     }
 }
 @media (max-width: 1200px){
@@ -174,6 +177,10 @@
         &__title{
             font-size: 40px;
             line-height: 50px;
+            margin: 30px 0 15px;
+        }
+        &__subtitle{
+            margin: 20px 0;
         }
         &__item{
             height: 500px;
@@ -194,47 +201,7 @@
             right: 7%;
         }
         .scrollbar{
-            bottom: -50px;
-        }
-        .temperature{
-            bottom: -70px; 
-        }
-    }
-}
-@media (max-width: 767px){
-    .promo{
-        .title{
-            font-size: 40px;
-            line-height: 45px;
-        }
-        &__content{
-            padding-top: 120px;
-            width: 90%;
-        }
-        &__subtitle{
-            font-size: 20px;
-            line-height: 21px;
-        }
-        &__mark{
-            right: 0;
-        }
-        .temperature{
-            left: 0;
             bottom: -40px;
-        }
-        &__slides{
-            &-counter{
-                display: none;
-            }
-        }
-        &__scrollbar.swiper-pagination{
-            height: 0;
-        }
-        .swiper-pagination-progressbar-fill{
-            display: none;
-        }
-        .promo__arrow{
-            display: none;
         }
         &__scrollbar.swiper-pagination{
             bottom: 0;
@@ -255,11 +222,61 @@
                     background-color: #fff;
                 }
             }
+            &__scrollbar.swiper-pagination{
+                height: 0;
+            }
+            .swiper-pagination-progressbar-fill{
+                display: none;
+            }
+        }
+        .promo__arrow{
+            display: none;
+        }
+        &__slides{
+            &-counter{
+                display: none;
+            }
+        }
+        .temperature{
+            left: 0;
+            bottom: -40px;
         }
         .scrollbar{
             max-width: 100%;
             height: 5px;
             left: 0;
+        }
+    }
+    .promo__scrollbar.swiper-pagination{
+        bottom: -10px;
+    }
+}
+@media (max-width: 767px){
+    .promo{
+        .temperature{
+            left: 0;
+            bottom: -40px;
+        }
+        .temperature p{
+            font-size: 14px;
+        }
+        .temperature span{
+            font-size: 17px;
+        }
+        .title{
+            font-size: 40px;
+            line-height: 45px;
+        }
+        &__content{
+            padding-top: 120px;
+            width: 90%;
+        }
+        &__subtitle{
+            font-size: 20px;
+            line-height: 21px;
+        }
+        &__mark{
+            right: 0;
         }
     }
 }
@@ -278,6 +295,26 @@
         &__mark{
             left: 31%;
         }
+        .temperature p{
+            font-size: 14px;
+        }
+    }
+    .temperature{
+        flex-wrap: wrap;
+        &__item{
+            flex-basis: 50%;
+            border-right: none;
+            &:first-child{
+                border-right: 2px solid #17B8A8;  
+            }
+            &:last-child{
+                padding-top: 5px;
+                flex-basis: 100%;
+            }
+        } 
+        span{
+            font-size: 15px;
+        }
     }
 }
 @media (max-width: 480px){
@@ -285,12 +322,33 @@
         &__title{
             margin: 0;
         }
+        &__content{
+            width: 100%;
+        }
         .temperature{
-            padding: 14px 12px 14px 16px;
-            width: 280px;
+            padding: 10px 12px 10px 12px;
+            width: 100%;
+            &__item{
+                flex-basis: 50%;
+                margin-bottom: 7px;
+                &:last-child{
+                    padding-top: 5px;
+                    flex-basis: 100%;
+                }
+            }
         }
         &__mark{
             left: 45%;
+        }
+    }
+}
+@media (max-width: 350px){
+    .promo{
+        .temperature{
+            &__item{
+                flex-basis: 45%;
+                margin-bottom: 7px;
+            }
         }
     }
 }

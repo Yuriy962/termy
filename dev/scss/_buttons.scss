@@ -2,6 +2,7 @@
     display: inline-block;
     padding: 5px 15px;
     font-size: 1.07em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: #fff;
     background-color: $btn;
@@ -24,6 +25,7 @@
     }
     &-event{
         padding: 15px 25px;
+        text-align: center;
     }
     &-transparent{
         background-color: transparent;

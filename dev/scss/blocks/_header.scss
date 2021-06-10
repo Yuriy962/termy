@@ -420,4 +420,9 @@
             }
         }
     }
+    &__sidebar{
+        &-item{
+            margin: 0 1px;
+        }
+    }
 }

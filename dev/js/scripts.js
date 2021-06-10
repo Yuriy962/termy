@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function () {
     $().fancybox();
-    $('a[href^="#"]:not(a[href="#request"]):not(a[href="#info"]):not(a[href="#adventures"]):not(a[href="#breathe"]):not(a[href="#levitation"])').on('click', function() {
+    $('a[href^="#"]:not(a.popup)').on('click', function() {
         let href = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(href).offset().top
@@ -56,7 +56,7 @@ $(document).ready(function () {
                         type: "bullets",
                     }
                 },
-                767:{
+                992:{
                     pagination: {
                         el: ".swiper-pagination",
                         type: "progressbar"
