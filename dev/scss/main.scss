@@ -30,12 +30,11 @@ body{
 }
 /*fancybox styles reset*/
 body.compensate-for-scrollbar {
-    overflow: initial;
-}
-body.compensate-for-scrollbar {
     margin-right: 0px;
 }
-
+body.compensate-for-scrollbar {
+    overflow: auto !important;
+}
 .page-overflow{
 	display: none;
 	position: absolute;
@@ -148,3 +147,16 @@ main{
 		top: 54.1499%
 	}
 }
+
+.acid-color{
+	color: $acid;
+    text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.swampy-color{
+	color: #0db3a2;
+}
+

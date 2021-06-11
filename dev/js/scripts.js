@@ -78,6 +78,7 @@ $(document).ready(function () {
 
     var giftswiper = new Swiper(".gift__slider", {
         slidesPerView: 1,
+        effect: "fade",
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -195,6 +196,24 @@ $(document).ready(function () {
               detect_active();
           });
       });
+
+      $(document).ready(function() {
+        $('.minus').click(function () {
+            var $input = $(this).parent().find('.counter__quantity');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.plus').click(function () {
+            var $input = $(this).parent().find('.counter__quantity');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+    });
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-36251023-1']);
     _gaq.push(['_setDomainName', 'jqueryscript.net']);
