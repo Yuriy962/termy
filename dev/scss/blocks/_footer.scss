@@ -92,6 +92,9 @@
     .form{
         max-width: 896px;
     }
+    .popup-content{
+        max-width: 896px;
+    }
 }
 @media (max-width: 992px){
     .form{
@@ -112,6 +115,9 @@
         &__inputs{
             margin-top: 0;
         }
+    }
+    .popup-content{
+        max-width: 500px;
     }
 }
 @media (max-width: 576px){
@@ -135,6 +141,9 @@
         .fancybox-content{
         }
     }
+    .popup-content{
+        max-width: 400px;
+    }
 }
 @media (max-width: 480px){
     .form{
@@ -149,8 +158,7 @@
             font-size: 13px;
         }
     }
-}
-
-.fancybox-button.fancybox-close-small{
-    
+    .popup-content{
+        max-width: 280px;
+    }
 }

@@ -238,3 +238,21 @@ $(".rules__bullet:not(.rules__bullet-active)").on('click', function(){
         });
         detect_active();
 });
+
+$(document).ready(function () {
+    /*
+    Начнём делать календарь
+    */
+   let months = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+   let weekDay = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
+   
+    function getYear() {
+        let year = new Date();
+        return year.getFullYear();
+    }
+    function getMyMonth(){
+        let month = new Date();
+        return months[month.getMonth()];
+    }
+    
+});
