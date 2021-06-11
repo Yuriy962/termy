@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>Волжские термы</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <div class="page-overflow"></div>
+        <header class="header position-relative">
+            <div class="header__inner position-fixed">
+                    <div class="header__block header__block_left position-absolute left"></div>
+                    <div class="header__block header__block_right position-absolute right"></div>
+                    <div class="container header-desktop position-relative z-index-1 d-lg-flex d-none justify-content-lg-between">
+                    <div class="header__left">
+                        <div class="header__top d-flex">
+                            <div class="icon d-flex align-items-start">
+                                <div class="icon__item">
+                                    <a href="https://www.instagram.com/" class="icon__inner">
+                                        <img src="icons/inst.svg" />
+                                    </a>
+                                </div>
+                                <div class="icon__item">
+                                    <a href="https://www.facebook.com/" class="icon__inner">
+                                        <img src="icons/fb.svg" />
+                                    </a>
+                                </div>
+                                <div class="icon__item">
+                                    <a href="https://vk.com/" class="icon__inner">
+                                        <img src="icons/vk.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu header__top_menu">
+                                <a href="#birthday" class="header__link underlined">Детский день рождения</a>
+                                <a href="#groups" class="header__link underlined">Обслуживание групп</a>
+                            </div>
+                        </div>
+                        <div class="header__bottom">
+                            <div class="menu header__top_menu">
+                                <a href="#greeting" class="header__link">Познакомимся</a>
+                                <a href="#schema" class="header__link">Путешествие</a>
+                                <a href="#wellness" class="header__link">Услуги</a>
+                                <a href="#additional" class="header__link">Дополнительные услуги</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <div class="logo__inner">
+                            <img src="icons/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__top d-flex">
+                            <a href="tel:79272072443" class="phone">+7 927 207 24 43 </a>
+                            <a class="buy" href="#ticket" target="_blank">Купить</a>
+                            <a href="#ticket" class="btn">Билет</ф>
+                            <a href="#gift" class="btn">Сертификат</a>
+                            <div class="icon basket">
+                                <div class="icon__item">
+                                    <div class="icon__inner">
+                                        <img src="icons/basket.svg" />
+                                    </div>
+                                </div>
+                                <div class="basket__content">
+                                    <div class="basket__inner">
+                                        <div class="basket__list">
+                                            <div class="basket__item">
+                                                <div class="basket__title">Взрослый</div>
+                                                <p class="basket__price">900 руб.</p>
+                                            </div>
+                                            <div class="basket__item">
+                                                <div class="basket__title">Детский 7-14 лет</div>
+                                                <p class="basket__price">750 руб.</p>
+                                            </div>
+                                        </div>
+                                        <div class="basket__btns d-flex justify-content-between">
+                                            <a href="" class="btn btn-transparent">Оформить заказ</a>
+                                            <a href="" class="btn">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__count">2</div>
+                            </div>
+                        </div>
+                        <div class="header__bottom">
+                            <div class="menu header__top_menu">
+                                <a href="#events" class="header__link">Мероприятия</a>
+                                <a href="#rules" class="header__link">ПРАВИЛА ПОСЕЩЕНИЯ</a>
+                                <a href="#reviews" class="header__link">ОТЗЫВЫ</a>
+                                <a href="#route" class="header__link">КАК ДОБРАТЬСЯ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-mobile position-relative d-lg-none d-block">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <div class="logo__inner">
+                                    <img src="icons/logo.svg" alt="Логотип">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between justify-content-sm-end header__icons">
+                                <a href="tel:+79272072443" class="phone header__icons_item">
+                                    <img src="icons/mobile/phone-mobile.svg" alt="">
+                                </a>
+                                <div class="icon basket header__icons_item">
+                                    <div class="icon__item">
+                                        <div class="icon__inner">
+                                            <img src="icons/mobile/basket-mobile.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="basket__content">
+                                        <div class="basket__inner">
+                                            <div class="basket__list">
+                                                <div class="basket__item">
+                                                    <div class="basket__title">Взрослый</div>
+                                                    <p class="basket__price">900 руб.</p>
+                                                </div>
+                                                <div class="basket__item">
+                                                    <div class="basket__title">Детский 7-14 лет</div>
+                                                    <p class="basket__price">750 руб.</p>
+                                                </div>
+                                            </div>
+                                            <div class="basket__btns d-flex justify-content-between">
+                                                <a href="" class="btn btn-transparent">Оформить заказ</a>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket__count">2</div>
+                                </div>
+                                <div class="hamburger header__icons_item">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__sidebar">
+                            <div class="container">
+                                <nav class="menu">
+                                    <ul>
+                                        <li><a href="#greeting">Познакомимся</a></li>
+                                        <li><a href="#schema">Путешествие</a></li>
+                                        <li><a href="#wellness">Услуги</a></li>
+                                        <li><a href="#additional">Дополнительные услуги</a></li>
+                                        <li><a href="#events">мероприятия</a></li>
+                                        <li><a href="#rules">ПРАВИЛА ПОСЕЩЕНИЯ</a></li>
+                                        <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                                        <li><a href="#route">КАК ДОБРАТЬСЯ</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="d-flex  justify-content-center mb-4">
+                                    <a href="tel:79272072443" class="phone header__sidebar-item ">+7 927 207 24 43 </a>
+                                    <div class="header__sidebar-item icon icon_white d-flex align-items-start">
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://www.instagram.com/" class="icon__inner">
+                                                <img src="icons/inst-green.svg">
+                                            </a>
+                                        </div>
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://www.facebook.com/" class="icon__inner">
+                                                <img src="icons/fb-green.svg">
+                                            </a>
+                                        </div>
+                                        <div class="icon__item icon__item_white">
+                                            <a href="https://vk.com/" class="icon__inner">
+                                                <img src="icons/vk-green.svg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav class="menu">
+                                    <ul>
+                                        <li><a href="#birthday" class="header__link underlined">Детский день рождения</a></li>
+                                        <li><a href="#groups" class="header__link underlined">Обслуживание групп</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header mobile -->
+        </header>
+
+        <main>
+
+
+<section class="basket-page">
+    <div class="container">
+        <div class="basket-page__inner">
+            <h2 class="title sectional-title basket-page__title text-center">Корзина</h2>
+            <h3 class="basket-page__subtitle text-center">Вам необходимо ознакомиться <a href="#rules" class="swampy-color" target="_blank">с правилами посещения</a></h3>
+
+            <div class="basket-page__content">
+                <table class="basket-page__table">
+                    <thead>
+                        <tr>
+                            <td>Категория билета</td>
+                            <td>Дата посещения</td>
+                            <td>Длительность посещения</td>
+                            <td>Цена</td>
+                            <td>Количество</td>
+                            <td>Сумма</td>
+                            <td class="custom"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Взрослый</td>
+                            <td>9 мая</td>
+                            <td>2,5 часа</td>
+                            <td>900 руб.</td>
+                            <td>
+                                <div class="counter">
+                                    <div class="counter__btn minus">
+                                        <img src="icons/minus.svg" alt="">
+                                    </div>
+                                    <input class="counter__quantity" type="text" value="1">
+                                    <div class="counter__btn plus">
+                                        <img src="icons/plus.svg" alt="">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>900 руб.</td>
+                            <td>
+                                <div class="trashcan">
+                                    <img src="/icons/trashcan-green.svg" alt="trashcan">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Детский 7-14 лет</td>
+                            <td>9 мая</td>
+                            <td>2,5 часа</td>
+                            <td>750 руб.</td>
+                            <td>
+                                <div class="counter">
+                                    <div class="counter__btn minus">
+                                        <img src="icons/minus.svg" alt="">
+                                    </div>
+                                    <input class="counter__quantity" type="text" value="2">
+                                    <div class="counter__btn plus">
+                                        <img src="icons/plus.svg" alt="">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1500 руб.</td>
+                            <td>
+                                <img src="/icons/trashcan-green.svg" alt="trashcan">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row justify-content-end align-items-center ml-0 mr-0">
+                    <p class="total">
+                        Итого: <span>1 650 руб</span>.
+                    </p>
+                    <a href="" class="btn btn-big">Оформить заказ</a>
+                </div>
+                <div class="text-lg-right">
+                    <p>Нажимая, вы даёте разрешение на <a href="#personal" data-fancybox="" class="popup swampy-color">обработку персональных данных</a> и соглашаетесь с <a href="#rules" class=" swampy-color">правилами посещения в центр</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="container position-relative d-none d-md-flex justify-content-lg-between align-items-center">
+                    <a href="#promo" class="logo logo_footer position-relative order-1">
+                        <div class="logo__inner">
+                            <img src="icons/logo-footer.svg" alt="">
+                        </div>
+                    </a>
+                    <p class="copyright">&copy; 2021 «Волжские термы»</p>
+                        <a href="#personal" data-fancybox="" class="popup">Политика обработки персональных данных</a>
+                        <a href="#rules">Правила посещения центра</a>
+                    <p>Создание сайта — <a href="https://seoprostor.ru/">Seo Простор</a></p>
+                    <div class="icon icon_white d-flex align-items-start order-2">
+                        <div class="icon__item icon__item_white">
+                            <a href="https://www.instagram.com/" class="icon__inner">
+                                <img src="icons/inst-green.svg">
+                            </a>
+                        </div>
+                        <div class="icon__item icon__item_white">
+                            <a href="https://www.facebook.com/" class="icon__inner">
+                                <img src="icons/fb-green.svg">
+                            </a>
+                        </div>
+                        <div class="icon__item icon__item_white">
+                            <a href="https://vk.com/" class="icon__inner">
+                                <img src="icons/vk-green.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container position-relative d-flex d-md-none flex-column justify-content-lg-between align-items-center">
+                   <div class="footer__wrapper d-flex justify-content-around justify-content-sm-between align-items-center mb-3">
+                       <a href="#promo" class="logo logo_footer position-relative order-1">
+                           <div class="logo__inner">
+                               <img src="icons/logo-footer.svg" alt="">
+                           </div>
+                       </a>
+                       <div class="icon icon_white d-flex align-items-start order-2">
+                           <div class="icon__item icon__item_white">
+                               <a href="https://www.instagram.com/" class="icon__inner">
+                                   <img src="icons/inst-green.svg">
+                               </a>
+                           </div>
+                           <div class="icon__item icon__item_white">
+                               <a href="https://www.facebook.com/" class="icon__inner">
+                                   <img src="icons/fb-green.svg">
+                               </a>
+                           </div>
+                           <div class="icon__item icon__item_white">
+                               <a href="https://vk.com/" class="icon__inner">
+                                   <img src="icons/vk-green.svg">
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+
+                    <p class="copyright">&copy; 2021 «Волжские термы»</p>
+                    <a href="#personal" data-fancybox="" class="popup">Политика обработки персональных данных</a>
+                    <a href="#rules">Правила посещения центра</a>
+                    <p>Создание сайта — <a href="https://seoprostor.ru/">Seo Простор</a></p>
+                </div>                
+            </div>
+        </footer>
+
+        <!-- Формы -->
+        <div style="display: none;">
+            <form class="form form-request" action="#" id="request">
+                <div class="form__wrapper">
+                    <h3 class="title title_small form__title">Заявка на <span>индивидуальное <br> обслуживание групп</span></h3>
+                        <div class="form__inputs d-flex">
+                            <div class="form__item">
+                                <label for="phone">Номер телефона</label>
+                                <input type="text" class="form__input" placeholder="+7 (___) __-____" id="phone">
+                            </div>
+                            <div class="form__item">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" class="form__input" placeholder="Ваше имя" id="name">
+                            </div>
+                        </div>
+                        <p class="form__text">Нажимая на кнопку "Отправить" вы даёте <a href="#personal" data-fancybox="" class="swampy-color popup">согласие на обработку и хранение персональных данных</a> <br> и принимаете правила посещения Центра.</p>
+                        <button class="form__btn btn btn-big">Отправить</button>
+                </div>
+            </form>
+       </div>
+
+       <!--Календарь событий-->
+       <div style="display: none;">
+        <form class="form form-request" action="#" id="levitation">
+            <div class="form__wrapper">
+                <h3 class="title title_small form__title">Заявка на <span>практику парения с цитрусами</span></h3>
+                <p class="form__text">Нажимая на кнопку вы даёте согласие на обработку и хранение персональных данных <br> и принимаете правила посещения Центра.</p>
+            </div>
+        </form>
+        </div>
+        <div style="display: none;">
+        <form class="form form-request" action="#" id="breathe">
+            <div class="form__wrapper">
+                <h3 class="title title_small form__title">Заявка на <span>программу
+                    “Дыши легко”</span></h3>
+                <p class="form__text">Нажимая на кнопку вы даёте согласие на обработку и хранение персональных данных <br> и принимаете правила посещения Центра.</p>
+            </div>
+        </form>
+        </div>
+        <div style="display: none;">
+            <form class="form form-request" action="#" id="adventures">
+                <div class="form__wrapper">
+                    <h3 class="title title_small form__title">Заявка на <span>детский квест «Морские приключения»</span></h3>
+                    <p class="form__text">Нажимая на кнопку вы даёте согласие на обработку и хранение персональных данных <br> и принимаете правила посещения Центра.</p>
+                </div>
+            </form>
+        </div>
+
+        <!--Как добраться-->
+        <div style="display: none;">
+            <div class="route__item popup-content" id="smr">
+                <div class="title title_small form__title">Из Самары от центрального автовокзала</div>
+                <div class="route__text">
+                    Автобусный маршрут № 492 до остановки г Новокуйбышевск “Пригородная автостанция”, далее одну остановку до “Волжские термы”
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div class="route__item popup-content" id="smr-zhd-or-plrev">
+            <div class="title title_small form__title">Из Самары от Железнодорожного и остановки “Площадь революции”</div>
+                <div class="route__text">
+                    Автобусный маршрут № 127 до остановки г Новокуйбышевск “Волжские термы”<br>
+                    <br>
+                    Автобусный маршрут № 128 до остановки г Новокуйбышевск “Пригородная автостанция” <br>
+                    <br>
+                    Пригородная электричка от жд. вокзала до станции “Молодёжная” г Новокуйбышевск ходит каждый час , время проезда 22 минуты, стоимость проезда 29 р<br>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div class="route__item popup-content" id="tlt">
+                <div class="title title_small form__title">Из Тольятти</div>
+                <div class="route__text">
+                    Автобусы № 652 и № 602 (Самара Тольятти через аэропорт) , до автовокзала центральный
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div class="route__item popup-content" id="nobokuibishevsk">
+                <div class="title title_small form__title">Из Новокуйбышевска</div>
+                <div class="route__text">
+                    до остановки “Волжские термы”
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div class="route__item popup-content" id="szrn">
+                <div class="title title_small form__title">Из Сызрани</div>
+                <div class="route__text">
+                    От жд вокзала г Сызрань -1 до станция “Молодёжная” г Новокуйбышевск, время в пути 2 ч,5 минут, стоимость проезда 168,20 р
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div class="route__item popup-content" id="airport-korolev">
+                <div class="title title_small form__title">От Аэропорта им Академика Сергея Королёва</div>
+                <div class="route__text">
+                    Добраться можно на <br>
+                    - аэроэкспрессе они ходят 2 раза в сутки. Билеты можно купить в вагоне, стоимость проезда 150 р <br>
+                    <br>
+                    - и на автобусе<br>
+                    Автобус № 78 до остановки в Самаре&nbsp;&nbsp;“Проспект Кирова” , время в пути 1 час 15 минут, стоимость проезда 32 р. Дальше маршрутка 429 до пригородной автостанции г Новокуйбышевск<br>
+                    Маршрутка 392 из посёлка рядом с аэропортом “Берёзы” (от терминалов, пешком 20 минут) до центрального автовокзала в Самаре ,стоимость проезда 150 р<br>
+                    Автобусы № 652 и № 602 (Самара Тольятти через аэропорт) , до автовокзала центральный, стоимость проезда 135 р <br>
+                    <br>
+                    -на такси 900 -1200 р<br>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <div class="route__item popup-content" id="airport-korolev">
+                <div class="title title_small form__title">Из “Южного города”</div>
+                <div class="route__text">
+
+                </div>
+            </div>
+        </div>
+
+        <!---->
+        <div style="display: none;">
+              <div class="text popup-content"  id="personal">
+                    Здесь будет текст по политике обработки персональных данных
+                </div>
+        </div>
+
+    </body>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/all.min.js"></script>
+</html>

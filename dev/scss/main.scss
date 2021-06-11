@@ -68,20 +68,22 @@ button{
 @import '../../node_modules/swiper/swiper-bundle.min';
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 @import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/greeting';
-@import 'blocks/schema';
-@import 'blocks/ticket';
-@import 'blocks/wellness';
-@import 'blocks/additional';
-@import 'blocks/gift';
-@import 'blocks/events';
+@import 'blocks/mainpage/promo';
+@import 'blocks/mainpage/greeting';
+@import 'blocks/mainpage/schema';
+@import 'blocks/mainpage/ticket';
+@import 'blocks/mainpage/wellness';
+@import 'blocks/mainpage/additional';
+@import 'blocks/mainpage/gift';
+@import 'blocks/mainpage/events';
 @import 'plug/cardSlider';
-@import 'blocks/rules';
-@import 'blocks/reviews';
-@import 'blocks/entry';
-@import 'blocks/route';
-@import 'blocks/map';
+@import 'blocks/mainpage/rules';
+@import 'blocks/mainpage/reviews';
+@import 'blocks/mainpage/entry';
+@import 'blocks/mainpage/route';
+@import 'blocks/mainpage/map';
+
+@import 'blocks/basket/basket';
 
 @import 'blocks/footer';
 

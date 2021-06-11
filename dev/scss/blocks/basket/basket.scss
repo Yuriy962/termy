@@ -1,0 +1,39 @@
+.basket-page{
+    min-height: 846px;
+    background-color: #EDF9F8;
+    &__inner{
+        padding: 83px 0 185px;
+        margin-top: 107px;
+    }
+    &__table{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(204, 221, 219, 0.2);
+        border-radius: 5px;
+        width: 100%;
+        thead{
+            border-bottom: 1px solid #0db2a2;
+            padding: 25px 50px;
+            color: $accent;
+            tr{
+                height: 72px;
+            }
+        }
+        tbody{
+            padding: 35px 50px 40px;
+            td{
+                min-height: 76px;
+            }
+        }
+        td{
+            text-align: left;
+            padding: 0 0 0 50px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .basket-page{
+        &__inner{
+            margin-top: 71px;
+        }
+    }
+}
