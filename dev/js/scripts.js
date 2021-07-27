@@ -125,9 +125,9 @@ $(document).ready(function () {
     $('.calendar__day').on('click', function () {
         $(this).toggleClass('calendar__day_active'); 
      });
-     $('.basket.icon').on('click', function (e) {
+     $('.basket.icon .icon__item').on('click', function (e) {
         e.preventDefault();
-        $(this).find('.basket__content').toggleClass('basket__content_active'); 
+        $(this).closest('.basket.icon').find('.basket__content').toggleClass('basket__content_active'); 
         $('.page-overflow').toggleClass('page-overflow_active');
      });
      $('.page-overflow').on('click', function(){

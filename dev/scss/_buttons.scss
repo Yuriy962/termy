@@ -40,6 +40,33 @@
         margin-top: 25px;
         text-align: center;
     }
+    &-payment{
+        background-color: #97E0D8;
+        box-shadow: 0px 10px 30px rgba(220, 252, 248, 0.6);
+        border-radius: 5px;
+        max-width: 389px;
+        font-size: 18px;
+        color: #000;
+        text-transform: none;
+        padding: 20px 18px;
+        padding-left: 76px;
+        letter-spacing: -0.03em;
+        border: none;
+        font-weight: 400;
+        &:hover{
+            background-color: #4BA39A;
+        }
+        &::before{
+            content: '';
+            width: 37px;
+            height: 37px;
+            background: url('../icons/wallet.png');
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }
 .buy{
     font-size: 13px;
@@ -57,12 +84,20 @@
         &-sectional{
             margin-bottom: 0px;
         }
+        &-payment{
+            padding: 20px 18px;
+            padding-left: 76px;
+            margin-top: 20px;
+        }
     }
 }
 @media (max-width: 767px){
     .btn{
         &-sectional{
             margin-top: 10px;
+        }
+        &-payment{
+            margin-top: 0px;
         }
     }
 }
