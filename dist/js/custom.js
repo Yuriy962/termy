@@ -21,6 +21,20 @@ window.addEventListener('DOMContentLoaded', () => {
     $(function() {
         $(".lazy").lazyload();
     });
+
+    new Swiper(".rules__slider--mobile", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoHeight: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: ".swiper-pagination.route__pag",
+            type: "bullets"
+        }
+    });
 });
 
 $(document).ready(function(){
